@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="OpenCartTest">
   <parameter name="browser" value="chrome"></parameter>
-  <parameter name="headless" value="false"></parameter>
+  <parameter name="headless" value="true"></parameter>
     <classes>
       <class name="testCases.TC_001_AccountRegistrationTest"/>
       <class name="testCases.TC_002_AccountLoginTest"/>
