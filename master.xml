@@ -6,10 +6,12 @@
 </listeners>
   <test thread-count="5" name="OpenCartTest">
   <parameter name="browser" value="chrome"></parameter>
-  <parameter name="headless" value="true"></parameter>
+  <parameter name="headless" value="false"></parameter>
     <classes>
       <class name="testCases.TC_001_AccountRegistrationTest"/>
       <class name="testCases.TC_002_AccountLoginTest"/>
+  	   <class name="testCases.TC_004_SearchProductTest"/>
+   	   <class name="testCases.TC_005_AddToCartPageTest"/> 
     </classes>
   </test> <!-- OpenCartTest -->
 </suite> <!-- OpenCartSuite -->

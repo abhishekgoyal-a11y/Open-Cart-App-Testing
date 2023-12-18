@@ -5,16 +5,16 @@
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
   <test thread-count="5" name="OpenCartTest(failed)">
-    <parameter name="headless" value="true"/>
+    <parameter name="headless" value="false"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC_003_AccountLoginDDT">
+      <class name="testCases.DDT.TC_001_AccountLogin">
         <methods>
-          <include name="test_account_login_ddt" invocation-numbers="4"/>
           <include name="tearDown"/>
+          <include name="test_execute_login_test_cases" invocation-numbers="6"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC_003_AccountLoginDDT -->
+      </class> <!-- testCases.DDT.TC_001_AccountLogin -->
     </classes>
   </test> <!-- OpenCartTest(failed) -->
 </suite> <!-- Failed suite [OpenCartSuite] -->

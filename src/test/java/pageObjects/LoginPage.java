@@ -30,4 +30,13 @@ public class LoginPage extends BasePage{
 		LoginBtn.click();
 	}
 	
+	public boolean isLoginPageExists() {
+		try {
+			return LoginBtn.isDisplayed();
+		}
+		catch (Exception e){
+			return false;
+		}
+	}
+	
 }
