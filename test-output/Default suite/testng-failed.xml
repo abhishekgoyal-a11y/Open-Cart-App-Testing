@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="test_account_login_ddt"/>
+          <include name="test_execute_login_test_cases"/>
         </methods>
       </class> <!-- testCases.DDT.TC_001_AccountLogin -->
     </classes>

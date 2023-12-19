@@ -11,7 +11,7 @@
       <class name="testCases.DDT.TC_001_AccountLogin">
         <methods>
           <include name="tearDown"/>
-          <include name="test_execute_login_test_cases" invocation-numbers="6"/>
+          <include name="test_execute_login_test_cases" invocation-numbers="9"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.DDT.TC_001_AccountLogin -->

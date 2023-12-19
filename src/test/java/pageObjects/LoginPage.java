@@ -1,4 +1,5 @@
 package pageObjects;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,6 +25,11 @@ public class LoginPage extends BasePage{
 	
 	public void setPassword(String password) {
 		passwordInput.sendKeys(password);
+	}
+	
+	public void copyPassword() {
+		passwordInput.sendKeys(Keys.CONTROL + "a");
+		passwordInput.sendKeys(Keys.CONTROL + "c");
 	}
 	
 	public void ClickLoginBtn() {

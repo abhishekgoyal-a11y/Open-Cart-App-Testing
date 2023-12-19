@@ -9,8 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AccountRegistrationPage extends BasePage{
-	public AccountRegistrationPage(WebDriver driver) {
+public class RegistrationPage extends BasePage{
+	public RegistrationPage(WebDriver driver) {
 		super(driver);
 	}
 	
@@ -37,6 +37,12 @@ public class AccountRegistrationPage extends BasePage{
 	
 	@FindBy(css = "#content > h1")
 	WebElement successMessage;
+	
+	@FindBy(xpath = "//*[@id=\"content\"]/p/a")
+	WebElement loginPageBtn;
+	
+	@FindBy(xpath = "//*[@id=\"column-right\"]/div/a[1]")
+	WebElement HeaderloginBtn;
 	
 	public void btnClick(WebElement buttonElm) {
         try {
@@ -76,6 +82,14 @@ public class AccountRegistrationPage extends BasePage{
 
 	public void btnContinue() {
 		btnClick(continueBtn);
+    }
+
+	public void btnLoginPage() {
+		btnClick(loginPageBtn);
+    }
+
+	public void btnHeaderLogin() {
+		btnClick(HeaderloginBtn);
     }
 	
 	public String getConfirmationmsg() {

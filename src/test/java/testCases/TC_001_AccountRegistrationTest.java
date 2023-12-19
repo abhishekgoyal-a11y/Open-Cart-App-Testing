@@ -1,7 +1,7 @@
 package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageObjects.AccountRegistrationPage;
+import pageObjects.RegistrationPage;
 import pageObjects.HomePage;
 import testBase.BaseClass;
 
@@ -17,7 +17,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
 			hp.clickRegister();
 			logger.info("Clicked on Register");
 			
-			AccountRegistrationPage acp = new AccountRegistrationPage(driver);
+			RegistrationPage acp = new RegistrationPage(driver);
 			acp.setFirstName(generateRandomString());
 			acp.setLastName(generateRandomString());
 			acp.setEmail(generateRandomString()+"@gmail.com");

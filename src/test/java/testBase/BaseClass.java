@@ -1,5 +1,7 @@
 package testBase;
 import java.io.File;
+import java.awt.*;
+import java.awt.datatransfer.*;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -67,6 +69,10 @@ public class BaseClass {
 		driver.quit();
 	}
 	
+	public void closeBrowser() {
+		driver.close();
+	}
+	
 	public static String generateRandomString() {
         return RandomStringUtils.randomAlphabetic(5);
     }
@@ -94,4 +100,19 @@ public class BaseClass {
 		return destination;
 
 	}
+	
+    public String getFromClipboard() {
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+        Transferable transferable = clipboard.getContents(null);
+
+        if (transferable != null && transferable.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+            try {
+                return (String) transferable.getTransferData(DataFlavor.stringFlavor);
+            } catch (UnsupportedFlavorException | IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return null;
+    }
 }

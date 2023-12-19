@@ -15,9 +15,22 @@ public class MyAccountPage extends BasePage{
 	@FindBy(xpath = "/html/body/main/div[2]/div/aside/div/a[13]")
 	WebElement logoutBtn;
 	
+	@FindBy(xpath="//*[@id=\"top\"]/div/div[2]/ul/li[2]/div/ul/li[1]/a")
+	WebElement MyAccountDropdown;
+	
 	public boolean isMyAccountPageExists() {
 		try {
 			return MyAccount.isDisplayed();
+		}
+		catch (Exception e){
+			return false;
+		}
+	}
+	
+	public boolean isMyAccountDropdownExists() {
+		try {
+			String MyAccountDropdownText = MyAccountDropdown.getText();
+			return MyAccountDropdownText.equals("My Account");
 		}
 		catch (Exception e){
 			return false;
