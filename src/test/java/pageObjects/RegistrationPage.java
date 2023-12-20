@@ -10,14 +10,26 @@ public class RegistrationPage extends BasePage{
 	@FindBy(name = "firstname")
 	WebElement firstname;
 	
+	@FindBy(id = "error-firstname")
+	WebElement error_firstname;
+	
 	@FindBy(name = "lastname")
 	WebElement lastname;
+	
+	@FindBy(id = "error-lastname")
+	WebElement error_lastname;
 	
 	@FindBy(name = "email")
 	WebElement email;
 	
+	@FindBy(id = "error-email")
+	WebElement error_email;
+	
 	@FindBy(name = "password")
 	WebElement password;
+	
+	@FindBy(id = "error-password")
+	WebElement error_password;
 	
 	@FindBy(xpath = "//*[@id='form-register']/div/div/input")
 	WebElement privacy_policy;
@@ -39,21 +51,40 @@ public class RegistrationPage extends BasePage{
 	
 	@FindBy(css = "div#alert>dirv")
 	WebElement RegistrationPageAlert;
-	
+
+	@FindBy(css = "div#alert>dirv>button")
+	WebElement RegistrationPageAlertCloseBtn;
+
 	public void setFirstName(String fn) {
-		firstname.sendKeys(fn);
+		SetInputValue(firstname, fn);
+	}
+	
+	public String getFirstNameError() {
+		return getElementText(error_firstname);
 	}
 	
 	public void setLastName(String ln) {
-		lastname.sendKeys(ln);
+		SetInputValue(lastname, ln);
+	}
+	
+	public String getLastNameError() {
+		return getElementText(error_lastname);
 	}
 	
 	public void setEmail(String em) {
-		email.sendKeys(em);
+		SetInputValue(email, em);
+	}
+	
+	public String getEmailError() {
+		return getElementText(error_email);
 	}
 	
 	public void setPassword(String psd) {
-		password.sendKeys(psd);
+		SetInputValue(password, psd);
+	}
+	
+	public String getPasswordError() {
+		return getElementText(error_password);
 	}
 	
 	public void btnPrivacyPolicy() {
@@ -77,22 +108,16 @@ public class RegistrationPage extends BasePage{
     }
 	
 	public String getConfirmationmsg() {
-		try {
-			return successMessage.getText();
-		}
-		catch (Exception e){
-			return e.getMessage();
-		}
+		return getElementText(successMessage);
 	}
 	
 	public String getRegistrationPageAlert() {
-
-		try {
-			return RegistrationPageAlert.getText();
-		}
-		catch (Exception e){
-			return e.getMessage();
-		}
+		return getElementText(RegistrationPageAlert);
+	}
+	
+	public void closeRegistrationPageAlert() {
+		System.out.println(RegistrationPageAlertCloseBtn);
+		btnClick(RegistrationPageAlertCloseBtn);
 	}
 
 }

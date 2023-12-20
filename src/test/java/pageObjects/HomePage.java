@@ -23,24 +23,26 @@ public class HomePage extends BasePage{
 	
 	@FindBy(xpath="//div[@id='search']//button[@type='button']") //For Search Product Test
 	WebElement btnSearch;
-
-	public void clickRegister() {
-		lnkRegister.click();
-	}
-	public void clickLogin() {
-		lnkLogin.click();
-	}
-	public void clickMyaccount() {
-		lnkMyaccount.click();
-	}
+	
 	public void enterProductName(String pName)   //For Search Product Test
 	{
 		txtSearchbox.sendKeys(pName);
 	}
+
+	public void clickRegister() {
+		btnClick(lnkRegister);
+	}
 	
-	public void clickSearch()  //For Search Product Test
+	public void clickLogin() {
+		btnClick(lnkLogin);
+	}
+	public void clickMyaccount() {
+		btnClick(lnkMyaccount);
+	}
+	
+	public void clickSearch()
 	{
-		btnSearch.click();
+		btnClick(btnSearch);
 	}
 		
 }

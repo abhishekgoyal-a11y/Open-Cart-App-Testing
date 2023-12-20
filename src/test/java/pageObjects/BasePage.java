@@ -31,4 +31,19 @@ public class BasePage {
             System.out.println("Exception while clicking on button: " + e.getMessage());
         }
 	}
+	
+	public String getElementText(WebElement Elm) {
+		try {
+			return Elm.getText();
+		}
+		catch (Exception e){
+			return e.getMessage();
+		}
+	}
+	
+	public void SetInputValue(WebElement Elm, String value) {
+		if (!value.equals("null")) {
+				Elm.sendKeys(value);
+		}
+	}
 }
