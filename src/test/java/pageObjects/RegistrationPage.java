@@ -1,13 +1,6 @@
-package pageObjects;
-
-import java.time.Duration;
-
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
+package pageObjects;import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegistrationPage extends BasePage{
 	public RegistrationPage(WebDriver driver) {
@@ -29,11 +22,11 @@ public class RegistrationPage extends BasePage{
 	@FindBy(xpath = "//*[@id='form-register']/div/div/input")
 	WebElement privacy_policy;
 	
-	@FindBy(css = "#input-newsletter-no")
-	WebElement subscribe_no;
-	
 	@FindBy(css = "#form-register > div > button")
 	WebElement continueBtn;
+	
+	@FindBy(xpath="//*[@id=\"input-newsletter\"]")
+	WebElement subscribeBtn;
 	
 	@FindBy(css = "#content > h1")
 	WebElement successMessage;
@@ -44,21 +37,8 @@ public class RegistrationPage extends BasePage{
 	@FindBy(xpath = "//*[@id=\"column-right\"]/div/a[1]")
 	WebElement HeaderloginBtn;
 	
-	public void btnClick(WebElement buttonElm) {
-        try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            WebElement continueButton = wait.until(ExpectedConditions.elementToBeClickable(buttonElm));
-
-            try {
-                continueButton.click();
-            } catch (Exception clickException) {
-                JavascriptExecutor executor = (JavascriptExecutor) driver;
-                executor.executeScript("arguments[0].click();", continueButton);
-            }
-        } catch (Exception e) {
-            System.out.println("Exception while clicking on button: " + e.getMessage());
-        }
-	}
+	@FindBy(css = "div#alert>dirv")
+	WebElement RegistrationPageAlert;
 	
 	public void setFirstName(String fn) {
 		firstname.sendKeys(fn);
@@ -84,6 +64,10 @@ public class RegistrationPage extends BasePage{
 		btnClick(continueBtn);
     }
 
+	public void btnSubscribe() {
+		btnClick(subscribeBtn);
+    }
+
 	public void btnLoginPage() {
 		btnClick(loginPageBtn);
     }
@@ -95,6 +79,16 @@ public class RegistrationPage extends BasePage{
 	public String getConfirmationmsg() {
 		try {
 			return successMessage.getText();
+		}
+		catch (Exception e){
+			return e.getMessage();
+		}
+	}
+	
+	public String getRegistrationPageAlert() {
+
+		try {
+			return RegistrationPageAlert.getText();
 		}
 		catch (Exception e){
 			return e.getMessage();

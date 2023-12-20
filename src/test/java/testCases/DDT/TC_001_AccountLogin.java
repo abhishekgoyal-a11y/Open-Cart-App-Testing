@@ -11,24 +11,24 @@ import utilities.DataProviders;
 public class TC_001_AccountLogin extends BaseClass{
 
 	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class)
-	void test_execute_login_test_cases(String action, String email, String password, String expected_result) {
+	void test_execute_login_test_cases(String action, String email, String password, String result) {
 		logger.info("****** TC_001_AccountLogin Started ******");
 		if (action.equals("account_login_validation"))
 		{
 			logger.info("****** account_login_validation Started ******");
-			account_login_validation(email, password, expected_result);
+			account_login_validation(email, password, result);
 			logger.info("****** account_login_validation Finished ******");
 		}
 		else if (action.equals("account_login_browser_back"))
 		{
 			logger.info("****** account_login_browser_back Started ******");
-			account_login_browser_back(email, password, expected_result);
+			account_login_browser_back(email, password, result);
 			logger.info("****** account_login_browser_back Finished ******");
 		}
 		else if (action.equals("account_login_logout_browser_back"))
 		{
 			logger.info("****** account_login_logout_browser_back Started ******");
-			account_login_logout_browser_back(email, password, expected_result);
+			account_login_logout_browser_back(email, password, result);
 			logger.info("****** account_login_logout_browser_back Finished ******");
 		}
 		else if (action.equals("account_login_password_copy"))
@@ -40,7 +40,7 @@ public class TC_001_AccountLogin extends BaseClass{
 		else if (action.equals("account_login_close_browser"))
 		{
 			logger.info("****** account_login_close_browser Started ******");
-			account_login_close_browser(email, password, expected_result);
+			account_login_close_browser(email, password, result);
 			logger.info("****** account_login_close_browser Finished ******");
 		}
 		else if (action.equals("account_login_navigating"))
@@ -56,7 +56,7 @@ public class TC_001_AccountLogin extends BaseClass{
 		logger.info("****** TC_001_AccountLogin Finished ******");
 	}
 	
-	void account_login_validation(String email, String password, String expected_result) {
+	void account_login_validation(String email, String password, String result) {
 		try {
 			HomePage hp = new HomePage(driver);
 			hp.clickMyaccount();
@@ -69,14 +69,14 @@ public class TC_001_AccountLogin extends BaseClass{
 			Thread.sleep(1000);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
-			if (expected_result.equals("Valid")) {
+			if (result.equals("Valid")) {
 				if (targetPage == true) {
 					map.ClicklogoutBtn();
 					Assert.assertTrue(true);
 				}
 				else {Assert.assertTrue(false);}
 			}
-			else if (expected_result.equals("Invalid")) {
+			else if (result.equals("Invalid")) {
 				if (targetPage == true) {
 					map.ClicklogoutBtn();
 					Assert.assertTrue(false);
@@ -89,7 +89,7 @@ public class TC_001_AccountLogin extends BaseClass{
 		}
 	}
 	
-	void account_login_browser_back(String email, String password, String expected_result) {
+	void account_login_browser_back(String email, String password, String result) {
 		try {
 			HomePage hp = new HomePage(driver);
 			hp.clickMyaccount();
@@ -102,7 +102,7 @@ public class TC_001_AccountLogin extends BaseClass{
 			Thread.sleep(1000);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
-			if (expected_result.equals("Valid")) {
+			if (result.equals("Valid")) {
 				if (targetPage == true) {
 					driver.navigate().back();
 					boolean loginPageExists = lp.isLoginPageExists();
@@ -111,7 +111,7 @@ public class TC_001_AccountLogin extends BaseClass{
 				}
 				else {Assert.assertTrue(false);}
 			}
-			else if (expected_result.equals("Invalid")) {
+			else if (result.equals("Invalid")) {
 				if (targetPage == true) {
 					map.ClicklogoutBtn();
 					Assert.assertTrue(false);
@@ -124,7 +124,7 @@ public class TC_001_AccountLogin extends BaseClass{
 		}
 	}
 	
-	void account_login_logout_browser_back(String email, String password, String expected_result) {
+	void account_login_logout_browser_back(String email, String password, String result) {
 		try {
 			HomePage hp = new HomePage(driver);
 			hp.clickMyaccount();
@@ -137,7 +137,7 @@ public class TC_001_AccountLogin extends BaseClass{
 			Thread.sleep(1000);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
-			if (expected_result.equals("Valid")) {
+			if (result.equals("Valid")) {
 				if (targetPage == true) {
 					map.ClicklogoutBtn();
 					driver.navigate().back();
@@ -147,7 +147,7 @@ public class TC_001_AccountLogin extends BaseClass{
 				}
 				else {Assert.assertTrue(false);}
 			}
-			else if (expected_result.equals("Invalid")) {
+			else if (result.equals("Invalid")) {
 				if (targetPage == true) {
 					map.ClicklogoutBtn();
 					Assert.assertTrue(false);
@@ -178,7 +178,7 @@ public class TC_001_AccountLogin extends BaseClass{
 		}
 	}
 	
-	void account_login_close_browser(String email, String password, String expected_result) {
+	void account_login_close_browser(String email, String password, String result) {
 		try {
 			HomePage hp = new HomePage(driver);
 			hp.clickMyaccount();
@@ -191,7 +191,7 @@ public class TC_001_AccountLogin extends BaseClass{
 			Thread.sleep(1000);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
-			if (expected_result.equals("Valid")) {
+			if (result.equals("Valid")) {
 				if (targetPage == true) {
 					closeBrowser();
 					setup("chrome", "false");
@@ -199,7 +199,7 @@ public class TC_001_AccountLogin extends BaseClass{
 				}
 				else {Assert.assertTrue(false);}
 			}
-			else if (expected_result.equals("Invalid")) {
+			else if (result.equals("Invalid")) {
 				if (targetPage == true) {
 					map.ClicklogoutBtn();
 					Assert.assertTrue(false);
