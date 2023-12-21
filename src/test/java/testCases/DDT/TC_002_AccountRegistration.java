@@ -60,6 +60,12 @@ public class TC_002_AccountRegistration extends BaseClass{
 			account_registration_privacy_policy_warning_validation(firstName, lastName, email, password, subscribe, privacyPolicy);
 			logger.info("****** account_registration_privacy_policy_warning_validation Finished ******");
 		}
+		else if (action.equals("account_registration_field_trailing_spaces"))
+		{
+			logger.info("****** account_registration_field_trailing_spaces Started ******");
+			account_registration_field_trailing_spaces(firstName, lastName, email, password, subscribe, privacyPolicy);
+			logger.info("****** account_registration_field_trailing_spaces Finished ******");
+		}
 		else {
 			System.out.println("test action not found '" + action +"'");
 			Assert.fail("test action not found:- '" + action +"'");
@@ -203,7 +209,6 @@ public class TC_002_AccountRegistration extends BaseClass{
 		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
 		add_delay(1);
 		String getRegistrationPageAlert = rp.getRegistrationPageAlert();
-		System.out.print("getRegistrationPageAlert"+getRegistrationPageAlert);
 		if (getRegistrationPageAlert.equals("Warning: You must agree to the Privacy Policy!")) {
 			Assert.assertTrue(true);
 		}
@@ -232,6 +237,32 @@ public class TC_002_AccountRegistration extends BaseClass{
 			Assert.fail("Password Place Holder Not Matching");
 		}
 		Assert.assertTrue(true);
+	}
+	
+	void account_registration_field_trailing_spaces(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
+		MyAccountPage map = new MyAccountPage(driver);
+		RegistrationPage rp = new RegistrationPage(driver);
+		email = "       " + generateRandomString()+ "Trailing@gmail.com              ";
+		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+		add_delay(1);
+		String getConfirmationmsg = rp.getConfirmationmsg();
+		if (getConfirmationmsg.equals("Your Account Has Been Created!")) {
+			rp.btnEditAccount();
+			if (!map.getFirstNameValue().equals(firstName.trim())) {
+				Assert.fail("getFirstNameValue");
+			}
+			if (!map.getlastNameValue().equals(lastName.trim())) {
+				Assert.fail("getlastNameValue");
+			}
+			if (!map.getEmailValue().equals(email.trim())) {
+				Assert.fail("getEmailValue"+map.getEmailValue()+email);
+			}
+			map.ClicklogoutBtn();
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.assertTrue(false);
+		}
 	}
 
 }

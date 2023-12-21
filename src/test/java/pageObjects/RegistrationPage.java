@@ -60,6 +60,9 @@ public class RegistrationPage extends BasePage{
 	
 	@FindBy(css = "#content > h1")
 	WebElement RegisterAccount;
+	
+	@FindBy(css = "#column-right > div > a:nth-child(2)")
+	WebElement EditAccountBtn;
 
 	public void setFirstName(String fn) {
 		SetInputValue(firstname, fn);
@@ -116,6 +119,10 @@ public class RegistrationPage extends BasePage{
 	public void btnHeaderLogin() {
 		btnClick(HeaderloginBtn);
     }
+	
+	public void btnEditAccount() {
+		btnClick(EditAccountBtn);
+	}
 	
 	public String getConfirmationmsg() {
 		return getElementText(successMessage);
