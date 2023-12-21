@@ -30,6 +30,24 @@ public class TC_002_AccountRegistration extends BaseClass{
 			account_registration_all_fields_warning_validation(firstName, lastName, email, password, subscribe, privacyPolicy);
 			logger.info("****** account_registration_all_fields_warning_validation Finished ******");
 		}
+		else if (action.equals("navigating_to_registered_page_from_different_page"))
+		{
+			logger.info("****** navigating_to_registered_page_from_different_page Started ******");
+			navigating_to_registered_page_from_different_page();
+			logger.info("****** navigating_to_registered_page_from_different_page Finished ******");
+		}
+		else if (action.equals("account_registration_email_field_warning_validation"))
+		{
+			logger.info("****** account_registration_email_field_warning_validation Started ******");
+			account_registration_email_field_warning_validation(firstName, lastName, email, password, subscribe, privacyPolicy);
+			logger.info("****** account_registration_email_field_warning_validation Finished ******");
+		}
+		else if (action.equals("account_fields_placeholder_validation"))
+		{
+			logger.info("****** account_fields_placeholder_validation Started ******");
+			account_fields_placeholder_validation();
+			logger.info("****** account_fields_placeholder_validation Finished ******");
+		}
 		else {
 			System.out.println("test action not found '" + action +"'");
 			Assert.fail("test action not found:- '" + action +"'");
@@ -114,6 +132,66 @@ public class TC_002_AccountRegistration extends BaseClass{
 		else {
 			Assert.fail();
 		}
+	}
+	
+	void navigating_to_registered_page_from_different_page() {
+		HomePage hp = new HomePage(driver);
+		RegistrationPage rp = new RegistrationPage(driver);
+		hp.clickMyaccount();
+		hp.clickRegister();
+		boolean isRegisterAccountPageExists1 = rp.isRegisterAccountPageExists();
+		if (!isRegisterAccountPageExists1) {
+			Assert.fail("Not taking to Registered Page - 1");
+		}
+		hp.clickMyaccount();
+		hp.clickLogin();
+		hp.clickNewCustomerContinue();
+		boolean isRegisterAccountPageExists2 = rp.isRegisterAccountPageExists();
+		if (!isRegisterAccountPageExists2) {
+			Assert.fail("Not taking to Registered Page - 2");
+		}
+		hp.clickMyaccount();
+		hp.clickLogin();
+		hp.clickRightColumnRegister();
+		boolean isRegisterAccountPageExists3 = rp.isRegisterAccountPageExists();
+		if (!isRegisterAccountPageExists3) {
+			Assert.fail("Not taking to Registered Page - 3");
+		}
+	}
+	
+	void account_registration_email_field_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
+		RegistrationPage rp = new RegistrationPage(driver);
+		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+		add_delay(1);
+		String getEmailError = rp.getEmailError();
+		if (getEmailError.equals("E-Mail Address does not appear to be valid!")) {
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.fail();
+		}
+	}
+	
+	void account_fields_placeholder_validation() {
+		RegistrationPage rp = new RegistrationPage(driver);
+		String first_name_placeholder = rp.get_first_name_placeholder();
+		String get_last_name_placeholder = rp.get_last_name_placeholder();
+		String get_email_placeholder = rp.get_email_placeholder();
+		String get_password_placeholder = rp.get_password_placeholder();
+		
+		if (!first_name_placeholder.equals("First Name")) {
+			Assert.fail("First Name Place Holder Not Matching");
+		}
+		if (!get_last_name_placeholder.equals("Last Name")) {
+			Assert.fail("Last Name Place Holder Not Matching");
+		}
+		if (!get_email_placeholder.equals("E-Mai")) {
+			Assert.fail("E-Mail Place Holder Not Matching");
+		}
+		if (!get_password_placeholder.equals("Password")) {
+			Assert.fail("Password Place Holder Not Matching");
+		}
+		Assert.assertTrue(true);
 	}
 
 }

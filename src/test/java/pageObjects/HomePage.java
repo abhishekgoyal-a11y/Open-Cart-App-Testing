@@ -18,11 +18,17 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "//*[@id=\"top\"]/div/div[2]/ul/li[2]/div/a")
 	WebElement lnkMyaccount;
 	
-	@FindBy(xpath="//input[@placeholder='Search']")  //For Search Product Test
+	@FindBy(xpath="//input[@placeholder='Search']")
 	WebElement txtSearchbox;
 	
-	@FindBy(xpath="//div[@id='search']//button[@type='button']") //For Search Product Test
+	@FindBy(xpath="//div[@id='search']//button[@type='button']")
 	WebElement btnSearch;
+	
+	@FindBy(css="#content > div > div:nth-child(1) > div > div > a")
+	WebElement btnNewCustomerContinue;
+	
+	@FindBy(xpath="//*[@id=\"column-right\"]/div/a[2]")
+	WebElement btnRightColumnRegister;
 	
 	public void enterProductName(String pName)   //For Search Product Test
 	{
@@ -43,6 +49,16 @@ public class HomePage extends BasePage{
 	public void clickSearch()
 	{
 		btnClick(btnSearch);
+	}
+	
+	public void clickNewCustomerContinue()
+	{
+		btnClick(btnNewCustomerContinue);
+	}
+	
+	public void clickRightColumnRegister()
+	{
+		btnClick(btnRightColumnRegister);
 	}
 		
 }

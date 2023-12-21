@@ -37,6 +37,9 @@ public class RegistrationPage extends BasePage{
 	@FindBy(css = "#form-register > div > button")
 	WebElement continueBtn;
 	
+	@FindBy(css = "#content > div > a")
+	WebElement continueBtn2;
+	
 	@FindBy(xpath="//*[@id=\"input-newsletter\"]")
 	WebElement subscribeBtn;
 	
@@ -54,6 +57,9 @@ public class RegistrationPage extends BasePage{
 
 	@FindBy(css = "div#alert>dirv>button")
 	WebElement RegistrationPageAlertCloseBtn;
+	
+	@FindBy(css = "#content > h1")
+	WebElement RegisterAccount;
 
 	public void setFirstName(String fn) {
 		SetInputValue(firstname, fn);
@@ -95,6 +101,10 @@ public class RegistrationPage extends BasePage{
 		btnClick(continueBtn);
     }
 
+	public void btnContinue2() {
+		btnClick(continueBtn2);
+    }
+
 	public void btnSubscribe() {
 		btnClick(subscribeBtn);
     }
@@ -119,5 +129,29 @@ public class RegistrationPage extends BasePage{
 		System.out.println(RegistrationPageAlertCloseBtn);
 		btnClick(RegistrationPageAlertCloseBtn);
 	}
+	
+	public boolean isRegisterAccountPageExists() {
+		try {
+			return RegisterAccount.isDisplayed();
+		}
+		catch (Exception e){
+			return false;
+		}
+	}
 
+	public String get_first_name_placeholder() {
+		return get_attribute_value(firstname, "placeholder");
+	}
+
+	public String get_last_name_placeholder() {
+		return get_attribute_value(lastname, "placeholder");
+	}
+
+	public String get_email_placeholder() {
+		return get_attribute_value(email, "placeholder");
+	}
+
+	public String get_password_placeholder() {
+		return get_attribute_value(password, "placeholder");
+	}
 }

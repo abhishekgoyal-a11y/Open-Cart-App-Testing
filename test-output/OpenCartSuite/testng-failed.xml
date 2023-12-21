@@ -11,7 +11,7 @@
       <class name="testCases.DDT.TC_002_AccountRegistration">
         <methods>
           <include name="tearDown"/>
-          <include name="test_execute_registration_test_cases" invocation-numbers="2"/>
+          <include name="test_execute_registration_test_cases" invocation-numbers="5"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.DDT.TC_002_AccountRegistration -->

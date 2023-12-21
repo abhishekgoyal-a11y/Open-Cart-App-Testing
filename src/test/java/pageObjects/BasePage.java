@@ -3,6 +3,7 @@ package pageObjects;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -46,4 +47,12 @@ public class BasePage {
 				Elm.sendKeys(value);
 		}
 	}
+    
+    public String get_attribute_value(WebElement Elm, String attribute) {
+    	try {
+    		return Elm.getAttribute(attribute);
+    	} catch  (NoSuchElementException e) {
+			return "";
+		}
+    }
 }

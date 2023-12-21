@@ -18,6 +18,9 @@ public class MyAccountPage extends BasePage{
 	@FindBy(xpath="//*[@id=\"top\"]/div/div[2]/ul/li[2]/div/ul/li[1]/a")
 	WebElement MyAccountDropdown;
 	
+	@FindBy(xpath = "//*[@id=\"column-right\"]/div/a[12]")
+	WebElement NewsLetterBtn;
+	
 	public boolean isMyAccountPageExists() {
 		try {
 			return MyAccount.isDisplayed();
@@ -39,6 +42,10 @@ public class MyAccountPage extends BasePage{
 	
 	public void ClicklogoutBtn() {
 		logoutBtn.click();
+	}
+	
+	public void ClickNewsLetterBtn() {
+		NewsLetterBtn.click();
 	}
 	
 }
