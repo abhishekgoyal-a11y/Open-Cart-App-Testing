@@ -48,6 +48,18 @@ public class TC_002_AccountRegistration extends BaseClass{
 			account_fields_placeholder_validation();
 			logger.info("****** account_fields_placeholder_validation Finished ******");
 		}
+		else if (action.equals("account_registration_password_field_warning_validation"))
+		{
+			logger.info("****** account_registration_password_field_warning_validation Started ******");
+			account_registration_password_field_warning_validation(firstName, lastName, email, password, subscribe, privacyPolicy);
+			logger.info("****** account_registration_password_field_warning_validation Finished ******");
+		}
+		else if (action.equals("account_registration_privacy_policy_warning_validation"))
+		{
+			logger.info("****** account_registration_privacy_policy_warning_validation Started ******");
+			account_registration_privacy_policy_warning_validation(firstName, lastName, email, password, subscribe, privacyPolicy);
+			logger.info("****** account_registration_privacy_policy_warning_validation Finished ******");
+		}
 		else {
 			System.out.println("test action not found '" + action +"'");
 			Assert.fail("test action not found:- '" + action +"'");
@@ -165,6 +177,34 @@ public class TC_002_AccountRegistration extends BaseClass{
 		add_delay(1);
 		String getEmailError = rp.getEmailError();
 		if (getEmailError.equals("E-Mail Address does not appear to be valid!")) {
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.fail();
+		}
+	}
+
+	
+	void account_registration_password_field_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
+		RegistrationPage rp = new RegistrationPage(driver);
+		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+		add_delay(1);
+		String getPasswordError = rp.getPasswordError();
+		if (getPasswordError.equals("Password must be between 4 and 20 characters!")) {
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.fail();
+		}
+	}
+	
+	void account_registration_privacy_policy_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
+		RegistrationPage rp = new RegistrationPage(driver);
+		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+		add_delay(1);
+		String getRegistrationPageAlert = rp.getRegistrationPageAlert();
+		System.out.print("getRegistrationPageAlert"+getRegistrationPageAlert);
+		if (getRegistrationPageAlert.equals("Warning: You must agree to the Privacy Policy!")) {
 			Assert.assertTrue(true);
 		}
 		else {
