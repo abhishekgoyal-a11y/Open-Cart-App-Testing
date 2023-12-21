@@ -185,7 +185,7 @@ public class TC_002_AccountRegistration extends BaseClass{
 		if (!get_last_name_placeholder.equals("Last Name")) {
 			Assert.fail("Last Name Place Holder Not Matching");
 		}
-		if (!get_email_placeholder.equals("E-Mai")) {
+		if (!get_email_placeholder.equals("E-Mail")) {
 			Assert.fail("E-Mail Place Holder Not Matching");
 		}
 		if (!get_password_placeholder.equals("Password")) {
