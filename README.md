@@ -1,3 +1,5 @@
+![Presentation1](https://github.com/abhishekgoyal-a11y/Open-Cart-App-Testing/assets/58354473/12bdb287-e883-4bbc-bf1f-5cf86a49a12b)
+
 # Frontend Testing for OpenCart E-commerce Website
 
 I have successfully conducted frontend testing for the OpenCart e-commerce website, applying both manual and automated approaches.
