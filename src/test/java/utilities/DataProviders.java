@@ -29,6 +29,13 @@ public class DataProviders {
 		return getData("Login");
 				
 	}
+
+	@DataProvider(name="LogoutData")
+	public String [][] getLogoutData() throws IOException
+	{	
+		return getData("Logout");
+				
+	}
 	
 	@DataProvider(name = "RegistrationData")
 	public String[][] getRegistrationData() throws IOException {

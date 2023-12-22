@@ -58,14 +58,8 @@ public class TC_001_AccountLogin extends BaseClass{
 	
 	void account_login_validation(String email, String password, String result) {
 		try {
-			HomePage hp = new HomePage(driver);
-			hp.clickMyaccount();
-			hp.clickLogin();
-			
 			LoginPage lp = new LoginPage(driver);
-			lp.setEmailAdress(email);
-			lp.setPassword(password);
-			lp.ClickLoginBtn();
+			lp.account_login(email, password);
 			Thread.sleep(1000);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();

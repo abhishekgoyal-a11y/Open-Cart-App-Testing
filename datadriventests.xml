@@ -8,8 +8,9 @@
   <parameter name="browser" value="chrome"></parameter>
   <parameter name="headless" value="false"></parameter>
     <classes>
-       <class name="testCases.DDT.TC_001_AccountLogin"/>
+      <class name="testCases.DDT.TC_001_AccountLogin"/>
       <class name="testCases.DDT.TC_002_AccountRegistration"/>
+      <class name="testCases.DDT.TC_003_AccountLogout"/>
     </classes>
   </test> <!-- OpenCartTest -->
 </suite> <!-- OpenCartSuite -->

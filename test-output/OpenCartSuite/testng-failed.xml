@@ -8,13 +8,13 @@
     <parameter name="headless" value="false"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.DDT.TC_002_AccountRegistration">
+      <class name="testCases.DDT.TC_001_AccountLogin">
         <methods>
           <include name="tearDown"/>
-          <include name="test_execute_registration_test_cases" invocation-numbers="9"/>
           <include name="setup"/>
+          <include name="test_execute_login_test_cases" invocation-numbers="9"/>
         </methods>
-      </class> <!-- testCases.DDT.TC_002_AccountRegistration -->
+      </class> <!-- testCases.DDT.TC_001_AccountLogin -->
     </classes>
   </test> <!-- OpenCartTest(failed) -->
 </suite> <!-- Failed suite [OpenCartSuite] -->

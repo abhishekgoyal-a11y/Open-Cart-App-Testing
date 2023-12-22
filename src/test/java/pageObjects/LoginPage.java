@@ -45,4 +45,12 @@ public class LoginPage extends BasePage{
 		}
 	}
 	
+	public void account_login(String email, String password) {
+		HomePage hp = new HomePage(driver);
+		hp.clickMyaccount();
+		hp.clickLogin();
+		setEmailAdress(email);
+		setPassword(password);
+		ClickLoginBtn();
+	}
 }

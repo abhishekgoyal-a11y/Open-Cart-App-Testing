@@ -13,7 +13,7 @@ I have successfully conducted frontend testing for the OpenCart e-commerce websi
 
 ### Automated Scenarios
 
-- Automated login and registration processes, ensuring coverage of all relevant scenarios and test data.
+- Automated login, registration and logout processes, ensuring coverage of all relevant scenarios and test data.
 - Implemented field-level validation to ensure data integrity.
 - Checked seamless page navigation for a smooth user experience.
 - Verified alert messages and placeholder text for accurate and user-friendly feedback.
@@ -34,9 +34,9 @@ I have successfully conducted frontend testing for the OpenCart e-commerce websi
 
 ### Test Case Summary
 
-- Total of 40 test cases.
-- Successfully automated 20 test cases.
-- Manually executed 20 test cases.
+- Total of 50 test cases.
+- Successfully automated 26 test cases.
+- Manually executed 24 test cases.
 
 ### Technologies Used
 
