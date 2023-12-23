@@ -1,5 +1,4 @@
 package pageObjects;
-
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
@@ -13,70 +12,86 @@ public class SearchPage extends BasePage
 	public SearchPage(WebDriver driver)
 	{
 		super(driver);
-	}	
+	}
 	
-		@FindBy(xpath="//*[@id=\"product-list\"]/div/div/div/a/img")
-		List<WebElement> searchProducts;
-				
-		@FindBy(xpath="//input[@id='input-quantity']")
-		WebElement txtquantity;
-		
-		@FindBy(xpath="//button[@id='button-cart']")
-		WebElement btnaddToCart;
-		
-		@FindBy(xpath="//div[contains(text(),'Success: You have added')]")
-		WebElement cnfMsg;
-		
-		public boolean isProductExist(String productName)
-		{
-			boolean flag=false;
-			for(WebElement product:searchProducts)
-			{				
-				if(product.getAttribute("title").equals(productName))
-				{
-				flag=true;
-				break;
-				}
-			}
-			
-			return flag;
-		
+	@FindBy(name="search")
+	WebElement searchInputBox;
+	
+	@FindBy(id="input-search")
+	WebElement searchCriteriaInputBox;
+	
+	@FindBy(xpath="//*[@id=\"search\"]/button")
+	WebElement searchBtn;
+	
+	@FindBy(css="div#content>h1")
+	WebElement productComparisonElm;
+	
+	@FindBy(id="button-search")
+	WebElement searchCriteriaBtn;
+	
+	@FindBy(id="input-sub-category")
+	WebElement subCategoryCheckBox;
+	
+	@FindBy(xpath="//*[@id=\"content\"]/h1")
+	WebElement searchPageHeading;
+	
+	@FindBy(id="input-category")
+	WebElement categoryDropdown;
+	
+	@FindBy(id="compare-total")
+	WebElement productCompareBtn;
+	
+	@FindBy(css="div#product-list>div")
+	List<WebElement> searched_product_counts;
+	
+	public void clickproductCompareBtn() {
+		btnClick(productCompareBtn);
+	}
+	
+	public void clicksearchBtn() {
+		btnClick(searchBtn);
+	}
+	
+	public void clicksubCategoryCheckBox() {
+		btnClick(subCategoryCheckBox);
+	}
+	
+	public void clicksearchCriteriaBtn() {
+		btnClick(searchCriteriaBtn);
+	}
+	
+	public void setsearchInputBox(String searchInputText) {
+		SetInputValue(searchInputBox, searchInputText);
+	}
+	
+	public void setsearchCriteriaInputBox(String searchInputText) {
+		SetInputValue(searchCriteriaInputBox, searchInputText);
+	}
+	
+	public String getsearchPageHeading() {
+		return getElementText(searchPageHeading);
+	}
+	
+	public int get_searched_product_counts() {
+		try {
+			return searched_product_counts.size();
 		}
-		
-		public void selectProduct(String productName)
-		{
-			for(WebElement product:searchProducts)
-			{				
-				if(product.getAttribute("title").equals(productName))
-				{
-					product.click();
-				}
-			}
-		
+		catch (Exception e) {
+			return 0;
 		}
-		
-		public void setQuantity(String qty)
-		{
-			txtquantity.clear();
-			txtquantity.sendKeys(qty);
+	}
+	
+	public boolean is_product_comparision_page_exists() {
+		try {
+			String productComparisonElmText = getElementText(productComparisonElm);
+			return productComparisonElmText.equals("Product Comparison");
 		}
-		
-		public void addToCart()
-		{
-			btnaddToCart.click();
+		catch (Exception e) {
+			return false;
 		}
-		
-		public boolean checkConfMsg()
-		{
-			try
-			{
-			return cnfMsg.isDisplayed();
-			}
-			catch(Exception e)
-			{
-				return false;
-			}
-		}
-		
+	}
+	
+	public void selectcategoryDropdown(String categoryDropdownValue) {
+		select_dropdown_by_value(categoryDropdown, categoryDropdownValue);
+	}
 }
-

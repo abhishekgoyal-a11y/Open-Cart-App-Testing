@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="25" failed="1" skipped="0">
+<testng-results ignored="0" total="37" passed="36" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-22T20:56:28 IST" name="OpenCartSuite" finished-at="2023-12-22T20:58:39 IST" duration-ms="131877">
+  <suite started-at="2023-12-23T14:39:13 IST" name="OpenCartSuite" finished-at="2023-12-23T14:43:36 IST" duration-ms="263242">
     <groups>
     </groups>
-    <test started-at="2023-12-22T20:56:28 IST" name="OpenCartTest" finished-at="2023-12-22T20:58:39 IST" duration-ms="131877">
-      <class name="testCases.DDT.TC_001_AccountLogin">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:56:28 IST" name="setup" finished-at="2023-12-22T20:56:30 IST" duration-ms="2707" status="PASS">
+    <test started-at="2023-12-23T14:39:13 IST" name="OpenCartTest" finished-at="2023-12-23T14:43:36 IST" duration-ms="263242">
+      <class name="testCases.DDT.TC_004_SearchPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:42:14 IST" name="setup" finished-at="2023-12-23T14:42:16 IST" duration-ms="1885" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,260 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:56:32 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:56:34 IST" duration-ms="2221" status="PASS">
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:42:17 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:42:17 IST" duration-ms="780" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[searched_product_text_validation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iphone]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:42:17 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:42:28 IST" duration-ms="10750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[no_product_found]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[productnotexists]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:42:28 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:42:39 IST" duration-ms="10587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[no_product_found]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:42:39 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:03 IST" duration-ms="23831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[searched_product_after_login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:03 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:05 IST" duration-ms="2279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[multiple_product_found]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[e]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:05 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:06 IST" duration-ms="1202" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[multiple_product_found]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[samsung]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:06 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:07 IST" duration-ms="1448" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[search_product_under_search_criteria]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:07 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:09 IST" duration-ms="1793" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[search_product_by_category_product_found]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[27]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:09 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:21 IST" duration-ms="12013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[search_product_by_category_no_product_found]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[18]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:21 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:34 IST" duration-ms="12516" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[search_product_check_sub_category]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[imac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:34 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-23T14:43:36 IST" duration-ms="1920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_compare_navigation_check]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[HTC Touch HD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_search_test_cases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-23T14:43:36 IST" name="tearDown" finished-at="2023-12-23T14:43:36 IST" duration-ms="452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.DDT.TC_004_SearchPage -->
+      <class name="testCases.DDT.TC_001_AccountLogin">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:39:13 IST" name="setup" finished-at="2023-12-23T14:39:58 IST" duration-ms="45264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:00 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:02 IST" duration-ms="1924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +302,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:56:34 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:56:46 IST" duration-ms="11722" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:02 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:14 IST" duration-ms="11454" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,7 +328,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:56:46 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:56:57 IST" duration-ms="11549" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:14 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:25 IST" duration-ms="11534" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +354,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:56:57 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:09 IST" duration-ms="11598" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:25 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:37 IST" duration-ms="11542" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -127,7 +380,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:09 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:21 IST" duration-ms="11527" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:37 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:48 IST" duration-ms="11469" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -153,7 +406,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:21 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:22 IST" duration-ms="1739" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:48 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:50 IST" duration-ms="1864" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -179,7 +432,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:22 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:24 IST" duration-ms="2029" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:50 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:52 IST" duration-ms="2066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,7 +458,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:24 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:25 IST" duration-ms="580" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:52 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:53 IST" duration-ms="511" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,7 +484,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:25 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:26 IST" duration-ms="1491" status="PASS">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:53 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:54 IST" duration-ms="1543" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -257,7 +510,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:26 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-22T20:57:30 IST" duration-ms="3370" status="FAIL">
+        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:54 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-23T14:40:57 IST" duration-ms="3411" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -329,13 +582,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_login_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_001_AccountLogin@19e4653c]" started-at="2023-12-22T20:57:30 IST" name="tearDown" finished-at="2023-12-22T20:57:30 IST" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-23T14:40:58 IST" name="tearDown" finished-at="2023-12-23T14:40:58 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.DDT.TC_001_AccountLogin -->
       <class name="testCases.DDT.TC_003_AccountLogout">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:07 IST" name="setup" finished-at="2023-12-22T20:58:09 IST" duration-ms="1893" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:41:40 IST" name="setup" finished-at="2023-12-23T14:41:42 IST" duration-ms="1762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,7 +604,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:09 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-22T20:58:11 IST" duration-ms="2222" status="PASS">
+        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:41:42 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-23T14:41:44 IST" duration-ms="2581" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -362,7 +615,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:11 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-22T20:58:13 IST" duration-ms="1908" status="PASS">
+        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:41:44 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-23T14:41:47 IST" duration-ms="2431" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -373,7 +626,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:13 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-22T20:58:15 IST" duration-ms="2267" status="PASS">
+        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:41:47 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-23T14:41:50 IST" duration-ms="2911" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -384,7 +637,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:15 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-22T20:58:25 IST" duration-ms="10174" status="PASS">
+        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:41:50 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-23T14:42:00 IST" duration-ms="10182" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -395,7 +648,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:25 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-22T20:58:36 IST" duration-ms="10335" status="PASS">
+        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:42:00 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-23T14:42:10 IST" duration-ms="10504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -406,7 +659,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:36 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-22T20:58:39 IST" duration-ms="3382" status="PASS">
+        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:42:10 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-23T14:42:14 IST" duration-ms="3505" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -417,13 +670,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_003_AccountLogout@cb0755b]" started-at="2023-12-22T20:58:39 IST" name="tearDown" finished-at="2023-12-22T20:58:39 IST" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-23T14:42:14 IST" name="tearDown" finished-at="2023-12-23T14:42:14 IST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testCases.DDT.TC_003_AccountLogout -->
       <class name="testCases.DDT.TC_002_AccountRegistration">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:30 IST" name="setup" finished-at="2023-12-22T20:57:32 IST" duration-ms="1879" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:40:58 IST" name="setup" finished-at="2023-12-23T14:41:00 IST" duration-ms="1827" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -439,7 +692,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:33 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:37 IST" duration-ms="3509" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:02 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:06 IST" duration-ms="3836" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -485,7 +738,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:37 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:41 IST" duration-ms="3960" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:06 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:10 IST" duration-ms="4109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -531,7 +784,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:41 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:44 IST" duration-ms="3524" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:10 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:13 IST" duration-ms="3689" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -577,7 +830,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:44 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:48 IST" duration-ms="3769" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:13 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:18 IST" duration-ms="4366" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -623,7 +876,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:48 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:51 IST" duration-ms="2784" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:18 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:22 IST" duration-ms="4052" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -669,7 +922,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:51 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:54 IST" duration-ms="3055" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:22 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:25 IST" duration-ms="3601" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -715,7 +968,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:54 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:58 IST" duration-ms="3938" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:25 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:30 IST" duration-ms="4434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -761,7 +1014,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:58 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:57:58 IST" duration-ms="61" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:30 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:30 IST" duration-ms="98" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -807,7 +1060,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:57:58 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:58:02 IST" duration-ms="3875" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:30 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:35 IST" duration-ms="4711" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -853,7 +1106,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:58:02 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-22T20:58:06 IST" duration-ms="4601" status="PASS">
+        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:35 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-23T14:41:39 IST" duration-ms="4865" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -899,7 +1152,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@53fb3dab]" started-at="2023-12-22T20:58:06 IST" name="tearDown" finished-at="2023-12-22T20:58:07 IST" duration-ms="415" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-23T14:41:39 IST" name="tearDown" finished-at="2023-12-23T14:41:40 IST" duration-ms="466" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

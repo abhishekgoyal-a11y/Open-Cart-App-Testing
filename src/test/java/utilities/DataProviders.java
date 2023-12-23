@@ -41,4 +41,9 @@ public class DataProviders {
 	public String[][] getRegistrationData() throws IOException {
 	    return getData("Registration");
 	}
+	
+	@DataProvider(name = "SearchData")
+	public String[][] getSearchData() throws IOException {
+	    return getData("Search");
+	}
 }

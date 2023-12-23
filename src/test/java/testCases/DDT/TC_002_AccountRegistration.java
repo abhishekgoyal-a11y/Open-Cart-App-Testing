@@ -74,194 +74,244 @@ public class TC_002_AccountRegistration extends BaseClass{
 	}
 	
 	void account_registration(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
-		HomePage hp = new HomePage(driver);
-		RegistrationPage rp = new RegistrationPage(driver);
-		hp.clickMyaccount();
-		hp.clickRegister();
-		if (firstName.isEmpty()) {
-			firstName = generateRandomString();
+		try {
+			HomePage hp = new HomePage(driver);
+			RegistrationPage rp = new RegistrationPage(driver);
+			hp.clickMyaccount();
+			hp.clickRegister();
+			if (firstName.isEmpty()) {
+				firstName = generateRandomString();
+			}
+			rp.setFirstName(firstName);
+			if (lastName.isEmpty()) {
+				lastName = generateRandomString();
+			}
+			rp.setLastName(lastName);
+			if (email.isEmpty()) {
+				email = generateRandomString()+"@gmail.com";
+			}
+			rp.setEmail(email);
+			if (password.isEmpty()) {
+				password = generateRandomAlphanumeric();
+			}
+			rp.setPassword(password);
+			if (subscribe.equals("true")) {
+				rp.btnSubscribe();
+			}
+			if (privacyPolicy.equals("true")) {
+				rp.btnPrivacyPolicy();
+			}
+			rp.btnContinue();
 		}
-		rp.setFirstName(firstName);
-		if (lastName.isEmpty()) {
-			lastName = generateRandomString();
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
-		rp.setLastName(lastName);
-		if (email.isEmpty()) {
-			email = generateRandomString()+"@gmail.com";
-		}
-		rp.setEmail(email);
-		if (password.isEmpty()) {
-			password = generateRandomAlphanumeric();
-		}
-		rp.setPassword(password);
-		if (subscribe.equals("true")) {
-			rp.btnSubscribe();
-		}
-		if (privacyPolicy.equals("true")) {
-			rp.btnPrivacyPolicy();
-		}
-		rp.btnContinue();
 	}
 	
 	void account_registration_success(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy, String result) {
-		MyAccountPage map = new MyAccountPage(driver);
-		RegistrationPage rp = new RegistrationPage(driver);
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(1);
-		String getConfirmationmsg = rp.getConfirmationmsg();
-		if (getConfirmationmsg.equals("Your Account Has Been Created!")) {
-			map.ClicklogoutBtn();
-			Assert.assertTrue(true);
+		try {
+			MyAccountPage map = new MyAccountPage(driver);
+			RegistrationPage rp = new RegistrationPage(driver);
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(1);
+			String getConfirmationmsg = rp.getConfirmationmsg();
+			if (getConfirmationmsg.equals("Your Account Has Been Created!")) {
+				map.ClicklogoutBtn();
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.assertTrue(false);
+			}
 		}
-		else {
-			Assert.assertTrue(false);
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 	
 	void account_registration_email_exists(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy, String result) {
-		RegistrationPage rp = new RegistrationPage(driver);
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(2);
-		String getRegistrationPageAlert = rp.getRegistrationPageAlert();
-		Assert.assertEquals(getRegistrationPageAlert, "Warning: E-Mail Address is already registered!");
+		try {
+			RegistrationPage rp = new RegistrationPage(driver);
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(2);
+			String getRegistrationPageAlert = rp.getRegistrationPageAlert();
+			Assert.assertEquals(getRegistrationPageAlert, "Warning: E-Mail Address is already registered!");
+		}
+		catch (Exception e) {
+			Assert.fail(e.toString());
+		}
 	}
 	
 	void account_registration_all_fields_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
-		RegistrationPage rp = new RegistrationPage(driver);
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(1);
-		String getFirstNameError = rp.getFirstNameError();
-		String getLastNameError = rp.getLastNameError();
-		String getEmailError = rp.getEmailError();
-		String getPasswordError = rp.getPasswordError();
-		String getRegistrationPageAlert = rp.getRegistrationPageAlert();
-    
-		if (getFirstNameError.equals("First Name must be between 1 and 32 characters!")) {
-			if (getLastNameError.equals("Last Name must be between 1 and 32 characters!")) {
-				if (getEmailError.equals("E-Mail Address does not appear to be valid!")) {
-					if (getPasswordError.equals("Password must be between 4 and 20 characters!")) {
-						if (getRegistrationPageAlert.equals(" Warning: You must agree to the Privacy Policy!")) {
-							Assert.assertTrue(true);
+		try {
+			RegistrationPage rp = new RegistrationPage(driver);
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(1);
+			String getFirstNameError = rp.getFirstNameError();
+			String getLastNameError = rp.getLastNameError();
+			String getEmailError = rp.getEmailError();
+			String getPasswordError = rp.getPasswordError();
+			String getRegistrationPageAlert = rp.getRegistrationPageAlert();
+	    
+			if (getFirstNameError.equals("First Name must be between 1 and 32 characters!")) {
+				if (getLastNameError.equals("Last Name must be between 1 and 32 characters!")) {
+					if (getEmailError.equals("E-Mail Address does not appear to be valid!")) {
+						if (getPasswordError.equals("Password must be between 4 and 20 characters!")) {
+							if (getRegistrationPageAlert.equals(" Warning: You must agree to the Privacy Policy!")) {
+								Assert.assertTrue(true);
+							}
 						}
 					}
 				}
 			}
+			else {
+				Assert.fail();
+			}
 		}
-		else {
-			Assert.fail();
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 	
 	void navigating_to_registered_page_from_different_page() {
-		HomePage hp = new HomePage(driver);
-		RegistrationPage rp = new RegistrationPage(driver);
-		hp.clickMyaccount();
-		hp.clickRegister();
-		boolean isRegisterAccountPageExists1 = rp.isRegisterAccountPageExists();
-		if (!isRegisterAccountPageExists1) {
-			Assert.fail("Not taking to Registered Page - 1");
+		try {
+			HomePage hp = new HomePage(driver);
+			RegistrationPage rp = new RegistrationPage(driver);
+			hp.clickMyaccount();
+			hp.clickRegister();
+			boolean isRegisterAccountPageExists1 = rp.isRegisterAccountPageExists();
+			if (!isRegisterAccountPageExists1) {
+				Assert.fail("Not taking to Registered Page - 1");
+			}
+			hp.clickMyaccount();
+			hp.clickLogin();
+			hp.clickNewCustomerContinue();
+			boolean isRegisterAccountPageExists2 = rp.isRegisterAccountPageExists();
+			if (!isRegisterAccountPageExists2) {
+				Assert.fail("Not taking to Registered Page - 2");
+			}
+			hp.clickMyaccount();
+			hp.clickLogin();
+			hp.clickRightColumnRegister();
+			boolean isRegisterAccountPageExists3 = rp.isRegisterAccountPageExists();
+			if (!isRegisterAccountPageExists3) {
+				Assert.fail("Not taking to Registered Page - 3");
+			}
 		}
-		hp.clickMyaccount();
-		hp.clickLogin();
-		hp.clickNewCustomerContinue();
-		boolean isRegisterAccountPageExists2 = rp.isRegisterAccountPageExists();
-		if (!isRegisterAccountPageExists2) {
-			Assert.fail("Not taking to Registered Page - 2");
-		}
-		hp.clickMyaccount();
-		hp.clickLogin();
-		hp.clickRightColumnRegister();
-		boolean isRegisterAccountPageExists3 = rp.isRegisterAccountPageExists();
-		if (!isRegisterAccountPageExists3) {
-			Assert.fail("Not taking to Registered Page - 3");
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 	
 	void account_registration_email_field_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
-		RegistrationPage rp = new RegistrationPage(driver);
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(1);
-		String getEmailError = rp.getEmailError();
-		if (getEmailError.equals("E-Mail Address does not appear to be valid!")) {
-			Assert.assertTrue(true);
+		try {
+			RegistrationPage rp = new RegistrationPage(driver);
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(1);
+			String getEmailError = rp.getEmailError();
+			if (getEmailError.equals("E-Mail Address does not appear to be valid!")) {
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.fail();
+			}
 		}
-		else {
-			Assert.fail();
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 
 	
 	void account_registration_password_field_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
-		RegistrationPage rp = new RegistrationPage(driver);
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(1);
-		String getPasswordError = rp.getPasswordError();
-		if (getPasswordError.equals("Password must be between 4 and 20 characters!")) {
-			Assert.assertTrue(true);
+		try {
+			RegistrationPage rp = new RegistrationPage(driver);
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(1);
+			String getPasswordError = rp.getPasswordError();
+			if (getPasswordError.equals("Password must be between 4 and 20 characters!")) {
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.fail();
+			}
 		}
-		else {
-			Assert.fail();
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 	
 	void account_registration_privacy_policy_warning_validation(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
-		RegistrationPage rp = new RegistrationPage(driver);
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(1);
-		String getRegistrationPageAlert = rp.getRegistrationPageAlert();
-		if (getRegistrationPageAlert.equals("Warning: You must agree to the Privacy Policy!")) {
-			Assert.assertTrue(true);
+		try {
+			RegistrationPage rp = new RegistrationPage(driver);
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(1);
+			String getRegistrationPageAlert = rp.getRegistrationPageAlert();
+			if (getRegistrationPageAlert.equals("Warning: You must agree to the Privacy Policy!")) {
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.fail();
+			}
 		}
-		else {
-			Assert.fail();
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 	
 	void account_fields_placeholder_validation() {
-		RegistrationPage rp = new RegistrationPage(driver);
-		String first_name_placeholder = rp.get_first_name_placeholder();
-		String get_last_name_placeholder = rp.get_last_name_placeholder();
-		String get_email_placeholder = rp.get_email_placeholder();
-		String get_password_placeholder = rp.get_password_placeholder();
-		
-		if (!first_name_placeholder.equals("First Name")) {
-			Assert.fail("First Name Place Holder Not Matching");
+		try {
+			RegistrationPage rp = new RegistrationPage(driver);
+			String first_name_placeholder = rp.get_first_name_placeholder();
+			String get_last_name_placeholder = rp.get_last_name_placeholder();
+			String get_email_placeholder = rp.get_email_placeholder();
+			String get_password_placeholder = rp.get_password_placeholder();
+			
+			if (!first_name_placeholder.equals("First Name")) {
+				Assert.fail("First Name Place Holder Not Matching");
+			}
+			if (!get_last_name_placeholder.equals("Last Name")) {
+				Assert.fail("Last Name Place Holder Not Matching");
+			}
+			if (!get_email_placeholder.equals("E-Mail")) {
+				Assert.fail("E-Mail Place Holder Not Matching");
+			}
+			if (!get_password_placeholder.equals("Password")) {
+				Assert.fail("Password Place Holder Not Matching");
+			}
+			Assert.assertTrue(true);
 		}
-		if (!get_last_name_placeholder.equals("Last Name")) {
-			Assert.fail("Last Name Place Holder Not Matching");
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
-		if (!get_email_placeholder.equals("E-Mail")) {
-			Assert.fail("E-Mail Place Holder Not Matching");
-		}
-		if (!get_password_placeholder.equals("Password")) {
-			Assert.fail("Password Place Holder Not Matching");
-		}
-		Assert.assertTrue(true);
 	}
 	
 	void account_registration_field_trailing_spaces(String firstName, String lastName, String email, String password, String subscribe, String privacyPolicy) {
-		MyAccountPage map = new MyAccountPage(driver);
-		RegistrationPage rp = new RegistrationPage(driver);
-		email = "       " + generateRandomString()+ "Trailing@gmail.com              ";
-		account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
-		add_delay(1);
-		String getConfirmationmsg = rp.getConfirmationmsg();
-		if (getConfirmationmsg.equals("Your Account Has Been Created!")) {
-			rp.btnEditAccount();
-			if (!map.getFirstNameValue().equals(firstName.trim())) {
-				Assert.fail("getFirstNameValue");
+		try {
+			MyAccountPage map = new MyAccountPage(driver);
+			RegistrationPage rp = new RegistrationPage(driver);
+			email = "       " + generateRandomString()+ "Trailing@gmail.com              ";
+			account_registration(firstName, lastName, email, password, subscribe, privacyPolicy);
+			add_delay(1);
+			String getConfirmationmsg = rp.getConfirmationmsg();
+			if (getConfirmationmsg.equals("Your Account Has Been Created!")) {
+				rp.btnEditAccount();
+				if (!map.getFirstNameValue().equals(firstName.trim())) {
+					Assert.fail("getFirstNameValue");
+				}
+				if (!map.getlastNameValue().equals(lastName.trim())) {
+					Assert.fail("getlastNameValue");
+				}
+				if (!map.getEmailValue().equals(email.trim())) {
+					Assert.fail("getEmailValue"+map.getEmailValue()+email);
+				}
+				map.ClicklogoutBtn();
+				Assert.assertTrue(true);
 			}
-			if (!map.getlastNameValue().equals(lastName.trim())) {
-				Assert.fail("getlastNameValue");
+			else {
+				Assert.assertTrue(false);
 			}
-			if (!map.getEmailValue().equals(email.trim())) {
-				Assert.fail("getEmailValue"+map.getEmailValue()+email);
-			}
-			map.ClicklogoutBtn();
-			Assert.assertTrue(true);
 		}
-		else {
-			Assert.assertTrue(false);
+		catch (Exception e) {
+			Assert.fail(e.toString());
 		}
 	}
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
@@ -44,7 +45,8 @@ public class BasePage {
 	
 	public void SetInputValue(WebElement Elm, String value) {
 		if (!value.equals("null")) {
-				Elm.sendKeys(value);
+			Elm.clear();
+			Elm.sendKeys(value);
 		}
 	}
     
@@ -54,5 +56,11 @@ public class BasePage {
     	} catch  (NoSuchElementException e) {
 			return "";
 		}
+    }
+
+    
+    public void select_dropdown_by_value(WebElement dropdownElm, String dropdownValue) {
+        Select select = new Select(dropdownElm);
+        select.selectByValue(dropdownValue);
     }
 }

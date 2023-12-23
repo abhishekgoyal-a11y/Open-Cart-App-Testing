@@ -11,6 +11,7 @@
       <class name="testCases.DDT.TC_001_AccountLogin"/>
       <class name="testCases.DDT.TC_002_AccountRegistration"/>
       <class name="testCases.DDT.TC_003_AccountLogout"/>
+      <class name="testCases.DDT.TC_004_SearchPage"/>
     </classes>
   </test> <!-- OpenCartTest -->
 </suite> <!-- OpenCartSuite -->
