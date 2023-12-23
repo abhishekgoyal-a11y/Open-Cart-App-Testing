@@ -38,7 +38,7 @@ I have successfully conducted frontend testing for the OpenCart e-commerce websi
 - Successfully automated 36 test cases.
 - Manually executed 37 test cases.
 
-### Technologies Used
+### Technologies Used:-
 
 - Java
 - Selenium
@@ -47,3 +47,7 @@ I have successfully conducted frontend testing for the OpenCart e-commerce websi
 - Maven for project management
 - Git and GitHub for version control
 - Jenkins for continuous integration
+
+### HTML Report
+
+![Screenshot 2023-12-23 145135](https://github.com/abhishekgoyal-a11y/Price-Drop-Alert/assets/58354473/8e2cfcce-1cce-4fd8-a0ac-b7c3c8bb8178)
