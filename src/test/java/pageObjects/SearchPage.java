@@ -44,6 +44,9 @@ public class SearchPage extends BasePage
 	@FindBy(css="div#product-list>div")
 	List<WebElement> searched_product_counts;
 	
+	@FindBy(css="#product-list > div > div > div.content > div > h4 > a")
+	List<WebElement> products_list;
+	
 	public void clickproductCompareBtn() {
 		btnClick(productCompareBtn);
 	}
@@ -93,5 +96,19 @@ public class SearchPage extends BasePage
 	
 	public void selectcategoryDropdown(String categoryDropdownValue) {
 		select_dropdown_by_value(categoryDropdown, categoryDropdownValue);
+	}
+	
+	public boolean select_product_by_text(String product_text) {
+		boolean productFound = false;
+		for (WebElement product:products_list) {
+			String get_product_text = product.getText().trim();
+			if (get_product_text.equals(product_text.trim())){
+				btnClick(product);
+				productFound = true;
+				break;
+			}
+			
+		}
+		return productFound;
 	}
 }
