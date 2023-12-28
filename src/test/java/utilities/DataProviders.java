@@ -46,4 +46,9 @@ public class DataProviders {
 	public String[][] getSearchData() throws IOException {
 	    return getData("Search");
 	}
+	
+	@DataProvider(name = "ProductDisplayPageData")
+	public String[][] getProductDisplayPageData() throws IOException {
+	    return getData("ProductDisplayPage");
+	}
 }

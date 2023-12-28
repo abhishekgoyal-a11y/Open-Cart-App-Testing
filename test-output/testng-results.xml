@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="37" passed="36" failed="1" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-24T20:12:11 IST" name="OpenCartSuite" finished-at="2023-12-24T20:16:25 IST" duration-ms="253581">
+  <suite started-at="2023-12-28T14:25:42 IST" name="OpenCartSuite" finished-at="2023-12-28T14:26:22 IST" duration-ms="40705">
     <groups>
     </groups>
-    <test started-at="2023-12-24T20:12:11 IST" name="OpenCartTest" finished-at="2023-12-24T20:16:25 IST" duration-ms="253581">
-      <class name="testCases.DDT.TC_004_SearchPage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:10 IST" name="setup" finished-at="2023-12-24T20:15:11 IST" duration-ms="1324" status="PASS">
+    <test started-at="2023-12-28T14:25:42 IST" name="OpenCartTest" finished-at="2023-12-28T14:26:22 IST" duration-ms="40705">
+      <class name="testCases.DDT.TC_005_ProductDisplayPage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:25:42 IST" name="setup" finished-at="2023-12-28T14:25:46 IST" duration-ms="3792" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:11 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:12 IST" duration-ms="633" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:25:49 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:25:51 IST" duration-ms="2708" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[searched_product_text_validation]]>
+                <![CDATA[product_details_verification]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[iphone]]>
+                <![CDATA[iMac]]>
               </value>
             </param>
             <param index="2">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Apple]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Product Code: Product 14]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
               <value>
                 <![CDATA[]]>
               </value>
@@ -43,117 +78,12 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:12 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:23 IST" duration-ms="10708" status="PASS">
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:25:51 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:25:56 IST" duration-ms="4829" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[no_product_found]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[productnotexists]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:23 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:33 IST" duration-ms="10608" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[no_product_found]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:33 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:56 IST" duration-ms="22356" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[searched_product_after_login]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:56 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:57 IST" duration-ms="1631" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[multiple_product_found]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[e]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:57 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:58 IST" duration-ms="553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[multiple_product_found]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[samsung]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:58 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:15:59 IST" duration-ms="1056" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[search_product_under_search_criteria]]>
+                <![CDATA[product_availability_verification]]>
               </value>
             </param>
             <param index="1">
@@ -166,86 +96,37 @@
                 <![CDATA[]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:15:59 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:16:00 IST" duration-ms="1213" status="PASS">
-          <params>
-            <param index="0">
+            <param index="3">
               <value>
-                <![CDATA[search_product_by_category_product_found]]>
+                <![CDATA[]]>
               </value>
             </param>
-            <param index="1">
+            <param index="4">
               <value>
-                <![CDATA[imac]]>
+                <![CDATA[]]>
               </value>
             </param>
-            <param index="2">
+            <param index="5">
               <value>
-                <![CDATA[27]]>
+                <![CDATA[Availability: In Stock]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:16:00 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:16:11 IST" duration-ms="11359" status="PASS">
-          <params>
-            <param index="0">
+            <param index="6">
               <value>
-                <![CDATA[search_product_by_category_no_product_found]]>
+                <![CDATA[]]>
               </value>
             </param>
-            <param index="1">
+            <param index="7">
               <value>
-                <![CDATA[imac]]>
+                <![CDATA[]]>
               </value>
             </param>
-            <param index="2">
+            <param index="8">
               <value>
-                <![CDATA[18]]>
+                <![CDATA[]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:16:11 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:16:23 IST" duration-ms="11740" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[search_product_check_sub_category]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[imac]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method signature="test_execute_search_test_cases(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:16:23 IST" name="test_execute_search_test_cases" data-provider="SearchData" finished-at="2023-12-24T20:16:25 IST" duration-ms="1501" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[product_compare_navigation_check]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[HTC Touch HD]]>
-              </value>
-            </param>
-            <param index="2">
+            <param index="9">
               <value>
                 <![CDATA[]]>
               </value>
@@ -253,910 +134,404 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_execute_search_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_004_SearchPage@712625fd]" started-at="2023-12-24T20:16:25 IST" name="tearDown" finished-at="2023-12-24T20:16:25 IST" duration-ms="451" status="PASS">
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:25:56 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:00 IST" duration-ms="4030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_availability_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung Galaxy Tab 10.1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Availability: Pre-Order]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:00 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:02 IST" duration-ms="2404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_price_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPod Touch]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$122.00]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Ex Tax: $100.00]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:02 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:05 IST" duration-ms="2605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_price_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iPod Classic]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[$122.00]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Ex Tax: $100.00]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:05 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:10 IST" duration-ms="5100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_quantity_text_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:10 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:13 IST" duration-ms="2805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_quantity_text_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Apple Cinema 30"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:13 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:17 IST" duration-ms="4088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_add_to_cart]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Samsung SyncMaster 941BW]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Success: You have added Samsung SyncMaster 941BW to your shopping cart!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:17 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-28T14:26:22 IST" duration-ms="4644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[product_minimum_quantity_text_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Apple Cinema 30"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[This product has a minimum quantity of 2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-28T14:26:22 IST" name="tearDown" finished-at="2023-12-28T14:26:22 IST" duration-ms="700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DDT.TC_004_SearchPage -->
-      <class name="testCases.DDT.TC_001_AccountLogin">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:12:12 IST" name="setup" finished-at="2023-12-24T20:12:57 IST" duration-ms="45809" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:12:59 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:01 IST" duration-ms="2025" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[topcoders1@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:01 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:13 IST" duration-ms="11618" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[lakshmi@yahoo.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Laxmi]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:13 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:24 IST" duration-ms="11474" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[laksh@yahoo.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:24 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:36 IST" duration-ms="11582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[topcoders1@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[xyz]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:36 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:47 IST" duration-ms="11477" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:47 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:49 IST" duration-ms="1800" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_browser_back]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[topcoders1@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:49 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:51 IST" duration-ms="2131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_logout_browser_back]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[topcoders1@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:51 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:52 IST" duration-ms="537" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_password_copy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[copypassword]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:52 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:53 IST" duration-ms="1501" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_navigating]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method signature="test_execute_login_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:53 IST" name="test_execute_login_test_cases" data-provider="LoginData" finished-at="2023-12-24T20:13:56 IST" duration-ms="3014" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_close_browser]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[topcoders1@gmail.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1067)
-at org.testng.Assert.assertEquals(Assert.java:1031)
-at org.testng.Assert.assertEquals(Assert.java:1077)
-at testCases.DDT.TC_001_AccountLogin.account_login_close_browser(TC_001_AccountLogin.java:192)
-at testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases(TC_001_AccountLogin.java:43)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_login_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_001_AccountLogin@795509d9]" started-at="2023-12-24T20:13:57 IST" name="tearDown" finished-at="2023-12-24T20:13:57 IST" duration-ms="357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DDT.TC_001_AccountLogin -->
-      <class name="testCases.DDT.TC_003_AccountLogout">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:14:37 IST" name="setup" finished-at="2023-12-24T20:14:38 IST" duration-ms="1691" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:14:38 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-24T20:14:41 IST" duration-ms="2412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_logout]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:14:41 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-24T20:14:43 IST" duration-ms="1996" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_logout_from_right_column]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:14:43 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-24T20:14:45 IST" duration-ms="2185" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_logout_browser_back]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:14:45 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-24T20:14:55 IST" duration-ms="10190" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_check_logout_btn_exists]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:14:55 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-24T20:15:06 IST" duration-ms="10449" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_check_logout_right_column_btn_exists]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method signature="test_execute_logout_test_cases(java.lang.String)[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:15:06 IST" name="test_execute_logout_test_cases" data-provider="LogoutData" finished-at="2023-12-24T20:15:09 IST" duration-ms="3418" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_login_two_times]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_logout_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_003_AccountLogout@33065d67]" started-at="2023-12-24T20:15:09 IST" name="tearDown" finished-at="2023-12-24T20:15:10 IST" duration-ms="380" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DDT.TC_003_AccountLogout -->
-      <class name="testCases.DDT.TC_002_AccountRegistration">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:13:57 IST" name="setup" finished-at="2023-12-24T20:13:59 IST" duration-ms="1643" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:00 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:04 IST" duration-ms="3894" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_success]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:04 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:08 IST" duration-ms="4302" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_email_exists]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[topcoders1@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:08 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:12 IST" duration-ms="3642" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_all_fields_warning_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[null]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[null]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[null]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[null]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:12 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:16 IST" duration-ms="4069" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_all_fields_warning_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[     ]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[     ]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[     ]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[     ]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:16 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:20 IST" duration-ms="3374" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[navigating_to_registered_page_from_different_page]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:20 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:23 IST" duration-ms="3768" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_email_field_warning_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[abhishek@gmail]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:23 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:27 IST" duration-ms="3912" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_password_field_warning_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:27 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:27 IST" duration-ms="59" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_fields_placeholder_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:27 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:32 IST" duration-ms="4184" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_privacy_policy_warning_validation]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method signature="test_execute_registration_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:32 IST" name="test_execute_registration_test_cases" data-provider="RegistrationData" finished-at="2023-12-24T20:14:36 IST" duration-ms="4730" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[account_registration_field_trailing_spaces]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[                  TrailingFirstName                      ]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[                  TrailingLastName                      ]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_execute_registration_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_002_AccountRegistration@cb0755b]" started-at="2023-12-24T20:14:36 IST" name="tearDown" finished-at="2023-12-24T20:14:37 IST" duration-ms="392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.DDT.TC_002_AccountRegistration -->
+      </class> <!-- testCases.DDT.TC_005_ProductDisplayPage -->
     </test> <!-- OpenCartTest -->
   </suite> <!-- OpenCartSuite -->
 </testng-results>
