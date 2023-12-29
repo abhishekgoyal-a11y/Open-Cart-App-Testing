@@ -1,8 +1,11 @@
 package testCases.DDT;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import pageObjects.LoginPage;
 import pageObjects.ProductDisplayPage;
 import pageObjects.SearchPage;
+import pageObjects.WishList;
 import testBase.BaseClass;
 import utilities.DataProviders;
 
@@ -48,6 +51,30 @@ public class TC_005_ProductDisplayPage extends BaseClass{
 			logger.info("****** product_minimum_quantity_text_verification Started ******");
 			product_minimum_quantity_text_verification(searched_text, result);
 			logger.info("****** product_minimum_quantity_text_verification Finished ******");
+		}
+		else if (action.equals("no_review_text_verification"))
+		{
+			logger.info("****** no_review_text_verification Started ******");
+			no_review_text_verification(searched_text, result);
+			logger.info("****** no_review_text_verification Finished ******");
+		}
+		else if (action.equals("review_tab_focus_verification"))
+		{
+			logger.info("****** review_tab_focus_verification Started ******");
+			review_tab_focus_verification(searched_text);
+			logger.info("****** review_tab_focus_verification Finished ******");
+		}
+		else if (action.equals("product_add_to_wishlist"))
+		{
+			logger.info("****** product_add_to_wishlist Started ******");
+			product_add_to_wishlist(searched_text, result);
+			logger.info("****** product_add_to_wishlist Finished ******");
+		}
+		else if (action.equals("verfiy_product_added_to_wishlist"))
+		{
+			logger.info("****** verfiy_product_added_to_wishlist Started ******");
+			verfiy_product_added_to_wishlist(searched_text);
+			logger.info("****** verfiy_product_added_to_wishlist Finished ******");
 		}
 		else {
 			System.out.println("test action not found '" + action +"'");
@@ -153,8 +180,6 @@ public class TC_005_ProductDisplayPage extends BaseClass{
 			add_delay(1);
 			String getProductDisplayPageSuccess = pdp.get_product_display_page_success();
 			Assert.assertEquals(getProductDisplayPageSuccess, result);
-		
-			Assert.assertTrue(true);
 		}
 		catch (Exception e) {
 			Assert.fail(e.toString());
@@ -172,6 +197,74 @@ public class TC_005_ProductDisplayPage extends BaseClass{
 				Assert.fail("Product Minimum Quantity Text Not Matching "+get_product_minimum_quantity+result);
 			}
 			Assert.assertTrue(true);
+		}
+		catch (Exception e) {
+			Assert.fail(e.toString());
+		}
+	}
+	
+	void no_review_text_verification(String searched_text, String result) {
+		try {
+			ProductDisplayPage pdp = new ProductDisplayPage(driver);
+			search_product(searched_text);
+			boolean productSelected = pdp.select_product_by_text(searched_text);
+			Assert.assertEquals(productSelected, true);
+			pdp.ReviewTabBtn();
+			String get_no_review_text = pdp.get_no_review_text();
+			System.out.println(get_no_review_text);
+			System.out.println(result);
+			if (!get_no_review_text.trim().equals(result.trim())){
+				Assert.fail("No Review Text Not Matching "+get_no_review_text+result);
+			}
+			Assert.assertTrue(true);
+		}
+		catch (Exception e) {
+			Assert.fail(e.toString());
+		}
+	}
+	
+	void review_tab_focus_verification(String searched_text) {
+		try {
+			ProductDisplayPage pdp = new ProductDisplayPage(driver);
+			search_product(searched_text);
+			boolean productSelected = pdp.select_product_by_text(searched_text);
+			Assert.assertEquals(productSelected, true);
+			pdp.ReviewTabBtn();
+			String review_tab_aria_selected = pdp.get_review_tab_aria_selected_text();
+			Assert.assertEquals(review_tab_aria_selected, "true");
+			Assert.assertTrue(true);
+		}
+		catch (Exception e) {
+			Assert.fail(e.toString());
+		}
+	}
+	
+	void product_add_to_wishlist(String searched_text, String result) {
+		try {
+			LoginPage lp = new LoginPage(driver);
+			ProductDisplayPage pdp = new ProductDisplayPage(driver);
+			lp.account_login(rb.getString("email"), rb.getString("password"));
+			add_delay(1);
+			search_product(searched_text);
+			pdp.AddToWishListBtn();
+			add_delay(1);
+			String getProductDisplayPageSuccess = pdp.get_product_display_page_success();
+			Assert.assertEquals(getProductDisplayPageSuccess, result);
+		}
+		catch (Exception e) {
+			Assert.fail(e.toString());
+		}
+	}
+	
+	void verfiy_product_added_to_wishlist(String searched_text) {
+		try {
+			ProductDisplayPage pdp = new ProductDisplayPage(driver);
+			WishList wl = new WishList(driver);
+			search_product(searched_text);
+			pdp.AddToWishListBtn();
+			pdp.AddToWishListLinkBtn();
+			boolean product_found_in_wishlist_page = wl.product_found(searched_text);
+			Assert.assertEquals(product_found_in_wishlist_page, true);
 		}
 		catch (Exception e) {
 			Assert.fail(e.toString());

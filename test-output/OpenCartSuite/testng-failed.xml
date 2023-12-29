@@ -10,7 +10,7 @@
     <classes>
       <class name="testCases.DDT.TC_005_ProductDisplayPage">
         <methods>
-          <include name="test_execute_product_display_page_test_cases" invocation-numbers="7"/>
+          <include name="test_execute_product_display_page_test_cases" invocation-numbers="9"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
