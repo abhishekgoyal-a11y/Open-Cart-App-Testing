@@ -34,9 +34,9 @@ I have successfully conducted frontend testing for the OpenCart e-commerce websi
 
 ### Test Case Summary
 
-- Total of 73 test cases.
-- Successfully automated 36 test cases.
-- Manually executed 37 test cases.
+- Total of 113 test cases.
+- Successfully automated 46 test cases.
+- Manually executed 67 test cases.
 
 ### Technologies Used:-
 
