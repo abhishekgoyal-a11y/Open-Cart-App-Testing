@@ -62,6 +62,12 @@ public class ProductDisplayPage extends BasePage{
 	@FindBy(xpath="/html/body/div/div/a[2]")
 	WebElement wish_list_link_in_success_message;
 
+	@FindBy(xpath="/html/body/div/div/a[2]")
+	WebElement product_comparision_link_in_success_message;
+
+	@FindBy(css="#product-list > div > div > div.content > form > div > button:nth-child(3)")
+	WebElement compare_to_product_btn;
+
 	public boolean select_product_by_text(String product_text) {
 		boolean productSelected = false;
 		for (WebElement product:products_list) {
@@ -126,6 +132,14 @@ public class ProductDisplayPage extends BasePage{
 	
 	public void AddToWishListLinkBtn() {
 		btnClick(wish_list_link_in_success_message);
+	}
+	
+	public void ProductCompareLinkBtn() {
+		btnClick(product_comparision_link_in_success_message);
+	}
+	
+	public void CompareProductBtn() {
+		btnClick(compare_to_product_btn);
 	}
 
 	public String get_product_display_page_success() {

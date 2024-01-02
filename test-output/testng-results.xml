@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+<testng-results ignored="0" total="14" passed="13" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-29T12:53:13 IST" name="OpenCartSuite" finished-at="2023-12-29T12:54:21 IST" duration-ms="67248">
+  <suite started-at="2024-01-02T14:40:44 IST" name="OpenCartSuite" finished-at="2024-01-02T14:41:32 IST" duration-ms="48224">
     <groups>
     </groups>
-    <test started-at="2023-12-29T12:53:13 IST" name="OpenCartTest" finished-at="2023-12-29T12:54:21 IST" duration-ms="67248">
+    <test started-at="2024-01-02T14:40:44 IST" name="OpenCartTest" finished-at="2024-01-02T14:41:32 IST" duration-ms="48224">
       <class name="testCases.DDT.TC_005_ProductDisplayPage">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:14 IST" name="setup" finished-at="2023-12-29T12:53:20 IST" duration-ms="5842" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:40:44 IST" name="setup" finished-at="2024-01-02T14:40:46 IST" duration-ms="2580" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:28 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:32 IST" duration-ms="4074" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:40:50 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:40:53 IST" duration-ms="2469" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:32 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:36 IST" duration-ms="3566" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:40:53 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:40:55 IST" duration-ms="2112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +135,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:36 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:39 IST" duration-ms="3711" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:40:55 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:40:57 IST" duration-ms="2112" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,7 +191,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:39 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:43 IST" duration-ms="3164" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:40:57 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:40:59 IST" duration-ms="2087" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -247,7 +247,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:43 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:46 IST" duration-ms="3173" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:40:59 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:01 IST" duration-ms="2339" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -303,7 +303,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:46 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:49 IST" duration-ms="3049" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:01 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:03 IST" duration-ms="2224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -359,7 +359,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:49 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:52 IST" duration-ms="2936" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:03 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:05 IST" duration-ms="1863" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -415,7 +415,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:52 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:53:57 IST" duration-ms="4870" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:05 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:09 IST" duration-ms="3179" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -471,7 +471,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:53:57 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:54:00 IST" duration-ms="3762" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:09 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:12 IST" duration-ms="3091" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -527,7 +527,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:54:00 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:54:04 IST" duration-ms="3663" status="FAIL">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:12 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:15 IST" duration-ms="3021" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -587,8 +587,8 @@
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: No Review Text Not Matching There are no reviews for this product.
 at org.testng.Assert.fail(Assert.java:111)
-at testCases.DDT.TC_005_ProductDisplayPage.no_review_text_verification(TC_005_ProductDisplayPage.java:217)
-at testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases(TC_005_ProductDisplayPage.java:58)
+at testCases.DDT.TC_005_ProductDisplayPage.no_review_text_verification(TC_005_ProductDisplayPage.java:224)
+at testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases(TC_005_ProductDisplayPage.java:59)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -623,7 +623,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:54:04 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:54:09 IST" duration-ms="4686" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:15 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:19 IST" duration-ms="4362" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -679,7 +679,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:54:09 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:54:17 IST" duration-ms="8183" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:19 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:25 IST" duration-ms="5317" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -735,7 +735,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:54:17 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2023-12-29T12:54:20 IST" duration-ms="2566" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:25 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:28 IST" duration-ms="3079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -791,7 +791,63 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_execute_product_display_page_test_cases -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2023-12-29T12:54:20 IST" name="tearDown" finished-at="2023-12-29T12:54:21 IST" duration-ms="777" status="PASS">
+        <test-method signature="test_execute_product_display_page_test_cases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:28 IST" name="test_execute_product_display_page_test_cases" data-provider="ProductDisplayPageData" finished-at="2024-01-02T14:41:32 IST" duration-ms="3947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[compare_product_success_verification]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Success: You have added iMac to your product comparison!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_execute_product_display_page_test_cases -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be]" started-at="2024-01-02T14:41:32 IST" name="tearDown" finished-at="2024-01-02T14:41:32 IST" duration-ms="363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

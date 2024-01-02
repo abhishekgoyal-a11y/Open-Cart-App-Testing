@@ -3,6 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.LoginPage;
+import pageObjects.ProductComparision;
 import pageObjects.ProductDisplayPage;
 import pageObjects.SearchPage;
 import pageObjects.WishList;
@@ -75,6 +76,12 @@ public class TC_005_ProductDisplayPage extends BaseClass{
 			logger.info("****** verfiy_product_added_to_wishlist Started ******");
 			verfiy_product_added_to_wishlist(searched_text);
 			logger.info("****** verfiy_product_added_to_wishlist Finished ******");
+		}
+		else if (action.equals("compare_product_success_verification"))
+		{
+			logger.info("****** compare_product_success_verification Started ******");
+			compare_product_success_verification(searched_text, result);
+			logger.info("****** compare_product_success_verification Finished ******");
 		}
 		else {
 			System.out.println("test action not found '" + action +"'");
@@ -265,6 +272,26 @@ public class TC_005_ProductDisplayPage extends BaseClass{
 			pdp.AddToWishListLinkBtn();
 			boolean product_found_in_wishlist_page = wl.product_found(searched_text);
 			Assert.assertEquals(product_found_in_wishlist_page, true);
+		}
+		catch (Exception e) {
+			Assert.fail(e.toString());
+		}
+	}
+	
+	void compare_product_success_verification(String searched_text, String result) {
+		try {
+			ProductDisplayPage pdp = new ProductDisplayPage(driver);
+			ProductComparision pc = new ProductComparision(driver);
+			add_delay(1);
+			search_product(searched_text);
+			pdp.CompareProductBtn();
+			add_delay(1);
+			String getProductDisplayPageSuccess = pdp.get_product_display_page_success();
+			Assert.assertEquals(getProductDisplayPageSuccess, result);
+			pdp.ProductCompareLinkBtn();
+			String getConfirmationmsg = pc.getConfirmationmsg();
+			Assert.assertEquals(getConfirmationmsg, "Product Comparison");
+			
 		}
 		catch (Exception e) {
 			Assert.fail(e.toString());
