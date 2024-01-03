@@ -2,7 +2,7 @@
 
 # Frontend Testing for OpenCart E-commerce Website
 
-I have successfully conducted frontend testing for the OpenCart e-commerce website, applying both manual and automated approaches.
+I have successfully conducted front-end testing for the OpenCart e-commerce website, applying both manual and automated approaches.
 
 ## Highlights of My Work
 
@@ -13,7 +13,7 @@ I have successfully conducted frontend testing for the OpenCart e-commerce websi
 
 ### Automated Scenarios
 
-- Automated login, registration, search and logout processes, ensuring coverage of all relevant scenarios and test data.
+- Automated login, registration, search, product display page and logout processes, ensuring coverage of all relevant scenarios and test data.
 - Implemented field-level validation to ensure data integrity.
 - Checked seamless page navigation for a smooth user experience.
 - Verified alert messages and placeholder text for accurate and user-friendly feedback.
