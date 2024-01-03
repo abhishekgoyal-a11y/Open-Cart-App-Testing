@@ -18,7 +18,7 @@
           <version>3.2.3</version>
           <configuration>
           <suiteXmlFiles>
-          	<suiteXmlFile>datadriventests.xml</suiteXmlFile>
+          	<suiteXmlFile>DataDrivenTests.xml</suiteXmlFile>
           </suiteXmlFiles>
           </configuration>
         </plugin>

@@ -60,7 +60,7 @@ public class TC_001_AccountLogin extends BaseClass{
 		try {
 			LoginPage lp = new LoginPage(driver);
 			lp.account_login(email, password);
-			Thread.sleep(1000);
+			add_delay(1);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
 			if (result.equals("Valid")) {
@@ -93,7 +93,7 @@ public class TC_001_AccountLogin extends BaseClass{
 			lp.setEmailAdress(email);
 			lp.setPassword(password);
 			lp.ClickLoginBtn();
-			Thread.sleep(1000);
+			add_delay(1);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
 			if (result.equals("Valid")) {
@@ -128,7 +128,7 @@ public class TC_001_AccountLogin extends BaseClass{
 			lp.setEmailAdress(email);
 			lp.setPassword(password);
 			lp.ClickLoginBtn();
-			Thread.sleep(1000);
+			add_delay(1);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
 			if (result.equals("Valid")) {
@@ -182,7 +182,7 @@ public class TC_001_AccountLogin extends BaseClass{
 			lp.setEmailAdress(email);
 			lp.setPassword(password);
 			lp.ClickLoginBtn();
-			Thread.sleep(1000);
+			add_delay(1);
 			MyAccountPage map = new MyAccountPage(driver);
 			boolean targetPage = map.isMyAccountPageExists();
 			if (result.equals("Valid")) {

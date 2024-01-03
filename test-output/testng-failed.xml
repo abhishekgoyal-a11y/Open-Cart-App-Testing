@@ -8,6 +8,13 @@
     <parameter name="headless" value="false"/>
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="testCases.DDT.TC_001_AccountLogin">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="test_execute_login_test_cases" invocation-numbers="9"/>
+        </methods>
+      </class> <!-- testCases.DDT.TC_001_AccountLogin -->
       <class name="testCases.DDT.TC_005_ProductDisplayPage">
         <methods>
           <include name="test_execute_product_display_page_test_cases" invocation-numbers="9"/>

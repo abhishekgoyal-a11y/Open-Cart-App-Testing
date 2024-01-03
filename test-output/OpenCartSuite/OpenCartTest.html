@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>OpenCartTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>49/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jan 02 14:40:44 IST 2024</td>
+<td>Started on:</td><td>Wed Jan 03 09:17:44 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48224 ms)</td>
+<tr><td>Total time:</td><td>275 seconds (275533 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,61 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_close_browser, topcoders1@gmail.com, 1234, Valid</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at testCases.DDT.TC_001_AccountLogin.account_login_close_browser(TC_001_AccountLogin.java:192)
+	at testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases(TC_001_AccountLogin.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1780974980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780974980'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1067)
+	at org.testng.Assert.assertEquals(Assert.java:1031)
+	at org.testng.Assert.assertEquals(Assert.java:1077)
+	at testCases.DDT.TC_001_AccountLogin.account_login_close_browser(TC_001_AccountLogin.java:192)
+	at testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases(TC_001_AccountLogin.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
 <td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: no_review_text_verification, Palm Treo Pro, , , , , , , , There are no reviews for this product.</td>
 <td><div><pre>java.lang.AssertionError: No Review Text Not Matching There are no reviews for this product.
 	at testCases.DDT.TC_005_ProductDisplayPage.no_review_text_verification(TC_005_ProductDisplayPage.java:224)
 	at testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases(TC_005_ProductDisplayPage.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace180121605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace180121605'><pre>java.lang.AssertionError: No Review Text Not Matching There are no reviews for this product.
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1368297793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1368297793'><pre>java.lang.AssertionError: No Review Text Not Matching There are no reviews for this product.
 	at org.testng.Assert.fail(Assert.java:111)
 	at testCases.DDT.TC_005_ProductDisplayPage.no_review_text_verification(TC_005_ProductDisplayPage.java:224)
 	at testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases(TC_005_ProductDisplayPage.java:59)
@@ -116,7 +164,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -127,70 +175,250 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_add_to_cart, Samsung SyncMaster 941BW, , , , , , , 5, Success: You have added Samsung SyncMaster 941BW to your shopping cart!</td>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_email_field_warning_validation, , , abhishek@gmail, , , true, </td>
 <td></td>
 <td>3</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
 <tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_price_verification, iPod Classic, , , , , $122.00, Ex Tax: $100.00, , </td>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_validation, lakshmi@yahoo.com, Laxmi, Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_003_AccountLogout.test_execute_logout_test_cases()'><b>test_execute_logout_test_cases</b><br>Test class: testCases.DDT.TC_003_AccountLogout<br>Parameters: account_logout_browser_back</td>
 <td></td>
 <td>2</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_quantity_text_verification, Apple Cinema 30", , , , , , , 2, </td>
-<td></td>
-<td>1</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_quantity_text_verification, iMac, , , , , , , 1, </td>
-<td></td>
-<td>2</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_details_verification, iMac, iMac, Apple, Product Code: Product 14, , , , , </td>
-<td></td>
-<td>2</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: compare_product_success_verification, iMac, , , , , , , , Success: You have added iMac to your product comparison!</td>
-<td></td>
-<td>3</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_availability_verification, Samsung Galaxy Tab 10.1, , , , Availability: Pre-Order, , , , </td>
-<td></td>
-<td>2</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_minimum_quantity_text_verification, Apple Cinema 30", , , , , , , , This product has a minimum quantity of 2</td>
-<td></td>
-<td>3</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: verfiy_product_added_to_wishlist, Samsung SyncMaster 941BW, , , , , , , , </td>
-<td></td>
-<td>3</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_availability_verification, iMac, , , , Availability: In Stock, , , , </td>
-<td></td>
-<td>2</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_price_verification, iPod Touch, , , , , $122.00, Ex Tax: $100.00, , </td>
-<td></td>
-<td>2</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
-<tr>
-<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: review_tab_focus_verification, Palm Treo Pro, , , , , , , , </td>
-<td></td>
-<td>4</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
+<td>testCases.DDT.TC_003_AccountLogout@712625fd</td></tr>
 <tr>
 <td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_add_to_wishlist, iMac, , , , , , , , Success: You have added iMac to your wish list!</td>
 <td></td>
 <td>5</td>
-<td>testCases.DDT.TC_005_ProductDisplayPage@1cf6d1be</td></tr>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_003_AccountLogout.test_execute_logout_test_cases()'><b>test_execute_logout_test_cases</b><br>Test class: testCases.DDT.TC_003_AccountLogout<br>Parameters: account_check_logout_right_column_btn_exists</td>
+<td></td>
+<td>10</td>
+<td>testCases.DDT.TC_003_AccountLogout@712625fd</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: no_product_found, , </td>
+<td></td>
+<td>10</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_navigating, , , </td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: search_product_by_category_no_product_found, imac, 18</td>
+<td></td>
+<td>11</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_minimum_quantity_text_verification, Apple Cinema 30", , , , , , , , This product has a minimum quantity of 2</td>
+<td></td>
+<td>3</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_003_AccountLogout.test_execute_logout_test_cases()'><b>test_execute_logout_test_cases</b><br>Test class: testCases.DDT.TC_003_AccountLogout<br>Parameters: account_check_logout_btn_exists</td>
+<td></td>
+<td>10</td>
+<td>testCases.DDT.TC_003_AccountLogout@712625fd</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_password_field_warning_validation, , , , 123, , true, </td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_field_trailing_spaces,                   TrailingFirstName                      ,                   TrailingLastName                      , , , , true, </td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_all_fields_warning_validation,      ,      ,      ,      , , , </td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: verfiy_product_added_to_wishlist, Samsung SyncMaster 941BW, , , , , , , , </td>
+<td></td>
+<td>3</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_success, , , , , true, true, Valid</td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_validation, topcoders1@gmail.com, xyz, Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_validation, topcoders1@gmail.com, 1234, Valid</td>
+<td></td>
+<td>3</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: search_product_check_sub_category, imac, 20</td>
+<td></td>
+<td>12</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: review_tab_focus_verification, Palm Treo Pro, , , , , , , , </td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_fields_placeholder_validation, , , , , , , </td>
+<td></td>
+<td>0</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_privacy_policy_warning_validation, , , , , , , </td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: search_product_under_search_criteria, iMac, </td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_quantity_text_verification, Apple Cinema 30", , , , , , , 2, </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: multiple_product_found, e, </td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_email_exists, , , topcoders1@gmail.com, , , true, Invalid</td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_add_to_cart, Samsung SyncMaster 941BW, , , , , , , 5, Success: You have added Samsung SyncMaster 941BW to your shopping cart!</td>
+<td></td>
+<td>3</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: searched_product_text_validation, iphone, </td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: navigating_to_registered_page_from_different_page, , , , , , , </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: search_product_by_category_product_found, imac, 27</td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_logout_browser_back, topcoders1@gmail.com, 1234, Valid</td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_validation, , , Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: searched_product_after_login, samsung, </td>
+<td></td>
+<td>22</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_availability_verification, iMac, , , , Availability: In Stock, , , , </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_browser_back, topcoders1@gmail.com, 1234, Valid</td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_003_AccountLogout.test_execute_logout_test_cases()'><b>test_execute_logout_test_cases</b><br>Test class: testCases.DDT.TC_003_AccountLogout<br>Parameters: account_logout_from_right_column</td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_003_AccountLogout@712625fd</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_details_verification, iMac, iMac, Apple, Product Code: Product 14, , , , , </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_validation, laksh@yahoo.com, 1234, Invalid</td>
+<td></td>
+<td>11</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_quantity_text_verification, iMac, , , , , , , 1, </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_002_AccountRegistration.test_execute_registration_test_cases()'><b>test_execute_registration_test_cases</b><br>Test class: testCases.DDT.TC_002_AccountRegistration<br>Parameters: account_registration_all_fields_warning_validation, null, null, null, null, , , </td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_002_AccountRegistration@33065d67</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: multiple_product_found, samsung, </td>
+<td></td>
+<td>0</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_price_verification, iPod Touch, , , , , $122.00, Ex Tax: $100.00, , </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_001_AccountLogin.test_execute_login_test_cases()'><b>test_execute_login_test_cases</b><br>Test class: testCases.DDT.TC_001_AccountLogin<br>Parameters: account_login_password_copy, , copypassword, </td>
+<td></td>
+<td>0</td>
+<td>testCases.DDT.TC_001_AccountLogin@53045c6c</td></tr>
+<tr>
+<td title='testCases.DDT.TC_003_AccountLogout.test_execute_logout_test_cases()'><b>test_execute_logout_test_cases</b><br>Test class: testCases.DDT.TC_003_AccountLogout<br>Parameters: account_login_two_times</td>
+<td></td>
+<td>5</td>
+<td>testCases.DDT.TC_003_AccountLogout@712625fd</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_price_verification, iPod Classic, , , , , $122.00, Ex Tax: $100.00, , </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: product_compare_navigation_check, HTC Touch HD, </td>
+<td></td>
+<td>1</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: compare_product_success_verification, iMac, , , , , , , , Success: You have added iMac to your product comparison!</td>
+<td></td>
+<td>4</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_005_ProductDisplayPage.test_execute_product_display_page_test_cases()'><b>test_execute_product_display_page_test_cases</b><br>Test class: testCases.DDT.TC_005_ProductDisplayPage<br>Parameters: product_availability_verification, Samsung Galaxy Tab 10.1, , , , Availability: Pre-Order, , , , </td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_005_ProductDisplayPage@742ff096</td></tr>
+<tr>
+<td title='testCases.DDT.TC_004_SearchPage.test_execute_search_test_cases()'><b>test_execute_search_test_cases</b><br>Test class: testCases.DDT.TC_004_SearchPage<br>Parameters: no_product_found, productnotexists, </td>
+<td></td>
+<td>10</td>
+<td>testCases.DDT.TC_004_SearchPage@7bba5817</td></tr>
+<tr>
+<td title='testCases.DDT.TC_003_AccountLogout.test_execute_logout_test_cases()'><b>test_execute_logout_test_cases</b><br>Test class: testCases.DDT.TC_003_AccountLogout<br>Parameters: account_logout</td>
+<td></td>
+<td>2</td>
+<td>testCases.DDT.TC_003_AccountLogout@712625fd</td></tr>
 </table><p>
 </body>
 </html>
