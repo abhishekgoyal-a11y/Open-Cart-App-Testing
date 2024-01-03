@@ -7,11 +7,13 @@ C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\testBase\BaseClas
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\utilities\ExtentReportManager.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\LoginPage.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\ProductDisplayPage.java
+C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\WishList.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\CheckoutPage.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\testCases\DDT\TC_004_SearchPage.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\testCases\DDT\TC_001_AccountLogin.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\testCases\DDT\TC_002_AccountRegistration.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\LogoutPage.java
+C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\ProductComparision.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\testCases\DDT\TC_005_ProductDisplayPage.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\SearchPage.java
 C:\Users\abgoyal\Downloads\Open-Cart-App-Testing\src\test\java\pageObjects\ShoppingCartPage.java

@@ -135,3 +135,7 @@
 09:22:15.016 [main] INFO  testCases.DDT.TC_005_ProductDisplayPage - ****** compare_product_success_verification Started ******
 09:22:19.312 [main] INFO  testCases.DDT.TC_005_ProductDisplayPage - ****** compare_product_success_verification Finished ******
 09:22:19.312 [main] INFO  testCases.DDT.TC_005_ProductDisplayPage - ****** TC_005_ProductDisplayPage Finished ******
+11:18:06.503 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** TC_001_AccountLogin Started ******
+11:18:06.512 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** account_login_validation Started ******
+11:18:46.394 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** TC_001_AccountLogin Started ******
+11:18:46.400 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** account_login_validation Started ******
