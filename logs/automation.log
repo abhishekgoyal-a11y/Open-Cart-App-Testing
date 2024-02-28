@@ -139,3 +139,5 @@
 11:18:06.512 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** account_login_validation Started ******
 11:18:46.394 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** TC_001_AccountLogin Started ******
 11:18:46.400 [main] INFO  testCases.DDT.TC_001_AccountLogin - ****** account_login_validation Started ******
+13:32:41.818 [main] INFO  testCases.DDT.TC_004_SearchPage - ****** TC_004_SearchPage Started ******
+13:32:41.824 [main] INFO  testCases.DDT.TC_004_SearchPage - ****** searched_product_text_validation Started ******

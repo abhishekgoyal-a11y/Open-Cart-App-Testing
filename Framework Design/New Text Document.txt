@@ -1,0 +1,6 @@
+what is hybrid automation framework
+what is page objects
+what is page object model
+what is maven
+what is ddt
+what is jenkins
